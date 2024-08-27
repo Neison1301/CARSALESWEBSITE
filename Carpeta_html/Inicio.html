@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Carpeta_Css/Inicio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login landing page</title>
+  </head>
+  <body>
+    <header class="rc">
+      <div class="msj">
+        <p class="bienvenido">¡BIENVENIDO!</p>
+        <p id="ingrese">
+          INGRESE SUS DATOS PERSONALES PARA USAR TODAS LAS FUNCIONES DEL SITIO
+        </p>
+      </div>
+      <img src="../Carpeta_Imagenes/Mototaxi.png" alt="" />
+    </header>
+
+    <main class="main">
+      <div class="login">
+        <p class="titulo">Iniciar Sesion</p>
+        <div class="separador"></div>
+        <p class="mensaje">
+          ¡Bienvenido de nuevo! Por favor ingrese sus datos.
+        </p>
+
+        <form class="form">
+          <div class="campos">
+            <p>Correo:</p>
+            <input type="text" placeholder="Ingrese su correo" required />
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="campos">
+            <p>Contraseña:</p>
+            <input type="password" placeholder="**********" required />
+            <i class="fas fa-lock"></i>
+          </div>
+
+          <button class="submit">Ingresar</button>
+          <div class="Registro">
+            <p>¿No tiene una cuenta?<a id="Acceso" href="Registrarse.html"><span> Cree una</span></a></p>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
