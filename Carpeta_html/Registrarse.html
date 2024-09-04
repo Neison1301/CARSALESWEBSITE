@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,65 +7,57 @@
     <link rel="stylesheet" href="../Carpeta_Css/Registrarse.Css" />
     <title>Registrate</title>
   </head>
+
   <body>
-    <section class="main">
-      <div class="login">
-        <p class="titulo">REGISTRATE</p>
-        <div class="separador"></div>
-        <p class="mensaje">
-          ¡Bienvenido de nuevo! Por favor ingrese sus datos.
-        </p>
+        <section id="login">
+            <h1 id="titulo">REGÍSTRATE</h1>
+            <hr class="separador" />
+            <p class="mensaje">¡Bienvenido de nuevo! Por favor ingrese sus datos.</p>
 
-        <form class="form">
-          <div class="campos">
-            <p>Nombre:</p>
-            <input type="text" placeholder="Nombre" required />
-            <i class="fas fa-user"></i>
-          </div>
-          <div class="campos">
-            <p>Apellidos:</p>
-            <input type="text" placeholder="Apellidos" required />
-            <i class="fas fa-user-tie"></i>
+            <!-- Formulario de registro -->
+            <form id="formm">
+                <div class="campos">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="campos">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required />
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="campos">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese su Correo" required />
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="campos">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="***********" required />
+                    <i class="fas fa-lock"></i>
+                </div>
 
-          </div>
-          <div class="campos">
-            <p>Correo</p>
-            <input type="text" placeholder="Ingrese su Correo" required />
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="campos">
-            <p>Contraseña:</p>
-            <input type="password" placeholder="***********" />
-            <i class="fas fa-lock"></i>
-          </div>
-          <br>
-          <div class="Registro">
-            <input type="checkbox" id="checkbox1" />
-            <label for="checkbox1"
-              >Al continuar con tu correo o tu red social aceptas los
-              <a href="#"><span>terminos y condiciones</span></a> y al
-              <a href="#"><span>aviso de privacidad</span></a></label
-            >
-          </div>
+                <div class="registro">
+                    <input type="checkbox" id="checkbox1" required />
+                    <label for="checkbox1">
+                        Al continuar con tu correo o tu red social aceptas los 
+                        <a href="#"><span>términos y condiciones</span></a> y el 
+                        <a href="#"><span>aviso de privacidad</span></a>.
+                    </label>
+                </div>
 
-          <button type="submit" class="submit">Registrarme</button>
-        </form>
-      </div>
-    </section>
+                <button type="submit" class="submit">Registrarme</button>
+            </form>
 
-    <section class="rc">
-      <div class="msj">
-        <p class="hola">¡HOLA!</p>
-        <p id="ingrese">
-          INGRESE SUS DATOS PERSONALES PARA USAR TODAS LAS FUNCIONES DEL SITIO
-        </p>
-      </div>
 
-      <img
-        src="../Carpeta_Imagenes/large.gif"
-        alt="Lamborghini"
-        class="car-image"
-      />
-    </section>
+         </section>
+
+        <section id="rc">
+          <div id="msj">
+              <h2 id="hola">¡HOLA!</h2>
+              <p id="ingrese">INGRESE SUS DATOS PERSONALES PARA USAR TODAS LAS FUNCIONES DEL SITIO</p>
+          </div>
+          <img src="../Carpeta_Imagenes/large.gif" alt="Lamborghini" class="car-image" />
+         </section>
   </body>
 </html>

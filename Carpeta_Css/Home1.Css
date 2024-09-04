@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+ 
 * {
   padding: 0;
   margin: 0;
@@ -19,13 +20,13 @@
 }
 
 body {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #b22de8 0%,
-    #470064 100%
-  ); /*el color de fondo ponerlo gradiente*/
-  color: #fff; /*cambiar el color de la letra*/
-  overflow-y: hidden;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)); /*el color de fondo ponerlo gradiente*/
+  color: #475569; /*cambiar el color de la letra*/
+}
+
+#empresa {
+  font-size: 1rem;
+  color: #475569;
 }
 header {
   width: 100%;
@@ -40,40 +41,41 @@ header {
 .logo img {
   width: 100%;
   height: auto;
+  color: black;
 }
 
-.opciones {
+#opciones {
   display: flex;
 }
 
-.opciones a {
+#opciones a {
   display: inline-block;
   margin: 0 35px;
-  color: #fff;
+  color: #475569;
   font-size: 1rem;
   transition: all 0.6s ease;
 }
-.opciones a:hover {
+#opciones a:hover {
   color: #ae8957; /*cambiar el color de la animacciona al precionar las opciones*/
 }
 
-.salir {
+#salir {
   display: flex;
   align-items: center;
 }
 
-.nave {
+#nave {
   display: inline-block;
   padding: 9px 24px;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #475569;
   border-radius: 7px;
-  color: #fff;
+  color: #475569;
   font-size: 15px;
   font-weight: 500;
   transition: all 0.6s ease;
 }
-.nave:hover {
+#nave:hover {
   transform: translateY(-5px);
   border: 2px solid #ae8957;
   color: #ae8957;
@@ -85,13 +87,14 @@ header {
   cursor: pointer;
   margin-left: 25px;
   display: none;
+  color: black;
 }
 
 section {
   padding: 5%;
 }
 
-.titulo {
+#titulo {
   position: relative;
   width: 100%;
   height: 100%;
@@ -103,7 +106,7 @@ section {
   gap: 2rem;
 }
 
-.titulo-nbr h1 {
+#titulo-nbr h1 {
   font-family: Poppins;
   margin: 15px 0;
   font-size: 4rem;
@@ -111,12 +114,12 @@ section {
   font-weight: 250;
   line-height: normal;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #fff 36.17%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, black 36.17%, rgba(255, 255, 255, 0) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.titulo-nbr p {
-  color: #fff;
+#titulo-nbr p {
+  color: black;
   font-family: Poppins;
   font-size: 24px;
   font-style: normal;
@@ -126,23 +129,23 @@ section {
   text-transform: uppercase;
 }
 
-.opciones2 {
-  width: 100%;
+#opciones2 {
+ width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.opciones2 a {
+#opciones2 a {
   width: 80%;
   padding: 15px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 64px;
-  border: 0.5px solid #fff;
+  border: 0.5px solid #475569;
   background: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(30.75px);
-  color: #fff;
+  color: #475569;
   font-family: Outfit;
   font-size: 20px;
   font-style: normal;
@@ -152,11 +155,11 @@ section {
   text-align: center;
 }
 
-.opciones2 a:hover {
+#opciones2 a:hover {
   transform: scale(1.1);
 }
 
-.imagen img {
+#imagen img {
   max-width: 100%;
   height: auto;
 }
@@ -166,19 +169,19 @@ img {
 }
 
 @media (max-width: 768px) {
-  .titulo {
+  #titulo {
     grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
     height: auto;
   }
 
-  .opciones2 {
+  #opciones2 {
     grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
   }
-  .opciones {
+  #opciones {
     display: none;
   }
 
-  .imagen img {
+  #imagen img {
     width: 100%;
     height: auto;
   }

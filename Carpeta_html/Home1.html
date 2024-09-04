@@ -3,49 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Carpeta_Css/Home1.Css" />
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../Carpeta_Css/Home1.Css">
 
     <title>Home1</title>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">
-        <img src="../Carpeta_iconos/Carro.png" alt="" />
+      
+      <a href="#" id="logo">
+        <img src="../Carpeta_Imagenes/favicon.svg" style="width: 64px; height: 56px;" alt="" />
       </a>
-
-      <ul class="opciones">
+      <h1  id="empresa">NOMBRE DE LA EMPRESA</h1>
+      <ul id="opciones">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Modelos</a></li>
         <li><a href="#">Publicar</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
-      <div class="salir">
+      <div id="salir">
         <a href="Inicio.html" class="nave">Inicie Sesion</a>
         <div class="bx bx-menu" id="iconomenu"></div>
       </div>
     </header>
 
-    <div class="menn">
-      <section class="titulo">
-        <div class="titulo-nbr">
+    <div id="menn">
+      <section id="titulo">
+        <div id="titulo-nbr">
           <h1>FERRARI Z1 X3</h1>
           <p>CONDUCE TU LEGADO</p>
         </div>
 
-        <div class="opciones2">
+        <div id="opciones2">
           <a href="#">Comprar ahora</a>
           <a href="#">Ver Detalles</a>
         </div>
       </section>
     </div>
 
-    <div class="imagen">
+    <div id="imagen">
       <img src="../Carpeta_Imagenes/ferrari.png" alt="ferrari">
     </div>
+
+    <section >
+      <p class="section__subheader">Experiencia del Cliente</p>
+      <h2 class="section__header">
+        Garantizamos la mejor experiencia del cliente.
+      </h2>
+        <div class="exp">
+          <span><i class="ri-price-tag-3-fill"></i></span>
+          <h4>Precios competitivos que se ajustan a tu presupuesto</h4>
+        </div>
+        <div class="exp">
+          <span><i class="ri-money-rupee-circle-fill"></i></span>
+          <h4>Opciones de renta accesibles y flexibles</h4>
+        </div>
+        <div class="exp">
+          <span><i class="ri-bank-card-fill"></i></span>
+          <h4>Las mejores garantías extendidas para tu auto</h4>
+        </div>
+        <div class="experience__card">
+          <span><i class="ri-customer-service-2-fill"></i></span>
+          <h4>Asistencia en carretera 24/7, estés donde estés</h4>
+        </div>
+        <img src="../Carpeta_Imagenes/experience.png" alt="experience" />
+    </section>
+    
+    <footer>
+      <div >
+          <h4> <span style="color: red;">Nombre de la empresa</span></h4>
+          <ul class="links">
+            <li><a href="#">Locales</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+          </ul>
+          <h4>Tipos de vehiculos(Modelos)</h4>
+          <ul class="links">
+            <li><a href="#">Autos</a></li>
+            <li><a href="#">Motos</a></li>
+            <li><a href="#">Buses y camiones</a></li>
+          </ul>
+          <h4>Servicios</h4>
+          <ul class="links">
+            <li><a href="#">Servicio postventa</a></li>
+          </ul>
+          <h4>Contacto</h4>
+          <ul class="links">
+            <li><a href="#">Centro de ayuda </a></li>
+            <li><a href="#">clientes@ <span style="color: red;">Nombre de la empresa</span>peru.com</a></li>
+            <li><a href="#"><i><img style="width: 15px; padding-bottom: 4px; margin-right: 5px; background-color: black;"
+                 src="https://autoland.com.pe/wp-content/uploads/2023/01/wsp.svg" alt=""></i>
+              928770412
+            </a></li>
+          </ul>
+      </div>
+      <div >
+        <h4> <span style="color: red;">Nombre de la empresa</span></h4>
+        <p>Concesionario <span style="color: red;">Nombre de la empresa</span> | Todos los derechos reservados © 2024</p>
+        <ul class="redes_sociales">
+          <li>
+            <a href="#"><img src="../Carpeta_Imagenes/facebook.svg" style="width: 15px; padding-bottom: 4px; margin-right: 5px;"alt=""></i></a>
+          </li>
+          <li>
+            <a href="#"><img src="../Carpeta_Imagenes/x.svg" alt="" style="width: 15px; padding-bottom: 4px; margin-right: 5px;"alt=""></a>
+          </li>
+          <li>
+            <a href="#"> <img src="../Carpeta_Imagenes/google.svg" alt="" style="width: 15px; padding-bottom: 4px; margin-right: 5px;"alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
