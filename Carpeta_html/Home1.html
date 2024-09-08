@@ -7,17 +7,18 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Carpeta_Css/Home1.Css">
-
     <title>Home1</title>
   </head>
   <body>
     <header>
-      
       <a href="#" id="logo">
-        <img src="../Carpeta_Imagenes/favicon.svg" style="width: 64px; height: 56px;" alt="" />
+        <img
+          src="../Carpeta_iconos/favicon.svg"
+          style="width: 64px; height: 56px"
+          alt=""
+        />
       </a>
-      <h1  id="empresa">NOMBRE DE LA EMPRESA</h1>
+      <h1 id="empresa">NOMBRE DE LA EMPRESA</h1>
       <ul id="opciones">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Modelos</a></li>
@@ -26,7 +27,7 @@
         <li><a href="#">Blog</a></li>
       </ul>
       <div id="salir">
-        <a href="Inicio.html" class="nave">Inicie Sesion</a>
+        <a href="Inicio.html" id="nave">Inicie Sesion</a>
         <div class="bx bx-menu" id="iconomenu"></div>
       </div>
     </header>
@@ -37,7 +38,6 @@
           <h1>FERRARI Z1 X3</h1>
           <p>CONDUCE TU LEGADO</p>
         </div>
-
         <div id="opciones2">
           <a href="#">Comprar ahora</a>
           <a href="#">Ver Detalles</a>
@@ -45,75 +45,187 @@
       </section>
     </div>
 
+    <section id="busqueda">
+      <h2>Encuentra tu Auto Ideal</h2>
+      <form action="#" method="GET">
+        <input type="text" name="marca" placeholder="Buscar por marca" />
+        <select name="tipo">
+          <option value="sedan">Sedán</option>
+          <option value="suv">SUV</option>
+          <option value="deportivo">Deportivo</option>
+        </select>
+        <input type="number" name="precio_min" placeholder="Precio mínimo" />
+        <input type="number" name="precio_max" placeholder="Precio máximo" />
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
     <div id="imagen">
-      <img src="../Carpeta_Imagenes/ferrari.png" alt="ferrari">
+      <img src="../Carpeta_Imagenes/ferrari.png" alt="ferrari" />
     </div>
 
-    <section >
-      <p class="section__subheader">Experiencia del Cliente</p>
-      <h2 class="section__header">
-        Garantizamos la mejor experiencia del cliente.
-      </h2>
-        <div class="exp">
-          <span><i class="ri-price-tag-3-fill"></i></span>
-          <h4>Precios competitivos que se ajustan a tu presupuesto</h4>
-        </div>
-        <div class="exp">
-          <span><i class="ri-money-rupee-circle-fill"></i></span>
-          <h4>Opciones de renta accesibles y flexibles</h4>
-        </div>
-        <div class="exp">
-          <span><i class="ri-bank-card-fill"></i></span>
-          <h4>Las mejores garantías extendidas para tu auto</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-customer-service-2-fill"></i></span>
-          <h4>Asistencia en carretera 24/7, estés donde estés</h4>
-        </div>
-        <img src="../Carpeta_Imagenes/experience.png" alt="experience" />
-    </section>
-    
-    <footer>
-      <div >
-          <h4> <span style="color: red;">Nombre de la empresa</span></h4>
-          <ul class="links">
-            <li><a href="#">Locales</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Trabaja con nosotros</a></li>
-            <li><a href="#">Terminos y condiciones</a></li>
-          </ul>
-          <h4>Tipos de vehiculos(Modelos)</h4>
-          <ul class="links">
-            <li><a href="#">Autos</a></li>
-            <li><a href="#">Motos</a></li>
-            <li><a href="#">Buses y camiones</a></li>
-          </ul>
-          <h4>Servicios</h4>
-          <ul class="links">
-            <li><a href="#">Servicio postventa</a></li>
-          </ul>
-          <h4>Contacto</h4>
-          <ul class="links">
-            <li><a href="#">Centro de ayuda </a></li>
-            <li><a href="#">clientes@ <span style="color: red;">Nombre de la empresa</span>peru.com</a></li>
-            <li><a href="#"><i><img style="width: 15px; padding-bottom: 4px; margin-right: 5px; background-color: black;"
-                 src="https://autoland.com.pe/wp-content/uploads/2023/01/wsp.svg" alt=""></i>
-              928770412
-            </a></li>
-          </ul>
+    <section>
+      <p>Experiencia del Cliente</p>
+      <h2>Garantizamos la mejor experiencia del cliente.</h2>
+      <div class="exp">
+        <span><i class="ri-price-tag-3-fill"></i></span>
+        <h4>Precios competitivos que se ajustan a tu presupuesto</h4>
       </div>
-      <div >
-        <h4> <span style="color: red;">Nombre de la empresa</span></h4>
-        <p>Concesionario <span style="color: red;">Nombre de la empresa</span> | Todos los derechos reservados © 2024</p>
+      <div class="exp">
+        <span><i class="ri-money-rupee-circle-fill"></i></span>
+        <h4>Opciones de renta accesibles y flexibles</h4>
+      </div>
+      <div class="exp">
+        <span><i class="ri-bank-card-fill"></i></span>
+        <h4>Las mejores garantías extendidas para tu auto</h4>
+      </div>
+      <div class="exp">
+        <span><i class="ri-customer-service-2-fill"></i></span>
+        <h4>Asistencia en carretera 24/7, estés donde estés</h4>
+      </div>
+      <img src="../Carpeta_Imagenes/experience.png" alt="modelo" />
+    </section>
+
+    <section>
+      <div>
+        <h3>BLOG</h3>
+        <h4>Conoce más sobre el mundo automotriz</h4>
+        <table>
+          <tr>
+            <td>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  src="../Carpeta_Imagenes/tipo-motor-autos-electricos.jpg"
+                  alt="Thumbnail ¿Qué tipo de motor usan los autos eléctricos?"
+                  style="height: 577px; width: auto"
+                />
+                <h3 class="c_orange t_h5 f_uBold m-0"></h3>
+                <h3>¿Qué tipo de motor usan los autos eléctricos?</h3>
+                <p>
+                  El auge de los sedanes, hatchbacks y SUV eléctricos está
+                  revolucionando la industria automotriz, atrayendo a
+                  conductores que buscan alternativas más limpias […]
+                </p>
+              </a>
+            </td>
+            <td>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  src="https://autoland.com.pe/wp-content/uploads/2021/05/Plantilla-Blog-Autoland-1.jpg"
+                  style="height: 577px; width: auto"
+                  alt="Thumbnail ¿Qué es el turbo y cómo influye en el desempeño de un auto?"
+                />
+                <h3 class="c_orange t_h5 f_uBold m-0"></h3>
+                <h3>
+                  ¿Qué es el turbo y cómo influye en el desempeño de un auto?
+                </h3>
+                <p class="m-0 f_lRegular h6">
+                  Te contamos la función del turbo en el motor de un auto y
+                  todas las ventajas y desempeño que puede brindar.
+                </p>
+              </a>
+            </td>
+            <td>
+              <a href="#">
+                <img
+                  loading="lazy"
+                  src="https://autoland.com.pe/wp-content/uploads/2024/08/diferencias-repuestos-originales-genericos.jpg"
+                  alt="Thumbnail 8 diferencias entre repuestos originales y genéricos"
+                />
+                <h3 class="c_orange t_h5 f_uBold m-0"></h3>
+                <h3 class="m-0 t_h4 f_lBold">
+                  8 diferencias entre repuestos originales y genéricos
+                </h3>
+                <p class="m-0 f_lRegular h6">
+                  Cuando se trata de mantener tu vehículo en óptimas
+                  condiciones, uno de los aspectos más importantes es la
+                  elección de los repuestos […]
+                </p>
+              </a>
+            </td>
+          </tr>
+        </table>
+        <a href="#">
+          <button class="blog_btn_link">Ir al Blog</button>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <h4><span style="color: red">Nombre de la empresa</span></h4>
+        <ul class="links">
+          <li><a href="#">Locales</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+        <h4>Tipos de vehículos (Modelos)</h4>
+        <ul class="links">
+          <li><a href="#">Autos</a></li>
+          <li><a href="#">Motos</a></li>
+          <li><a href="#">Buses y camiones</a></li>
+        </ul>
+        <h4>Servicios</h4>
+        <ul class="links">
+          <li><a href="#">Servicio postventa</a></li>
+        </ul>
+        <h4>Contacto</h4>
+        <ul class="links">
+          <li><a href="#">Centro de ayuda</a></li>
+          <li>
+            <a href="#"
+              >clientes@<span style="color: red">Nombre de la empresa</span
+              >peru.com</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i
+                ><img
+                  src="../Carpeta_iconos/whatsapp.svg"
+                  style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+                  alt=""
+              /></i>
+              928770412</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4><span style="color: red">Nombre de la empresa</span></h4>
+        <p>
+          Concesionario <span style="color: red">Nombre de la empresa</span> |
+          Todos los derechos reservados © 2024
+        </p>
         <ul class="redes_sociales">
           <li>
-            <a href="#"><img src="../Carpeta_Imagenes/facebook.svg" style="width: 15px; padding-bottom: 4px; margin-right: 5px;"alt=""></i></a>
+            <a href="#"
+              ><img
+                src="../Carpeta_iconos/facebook.svg"
+                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+                alt=""
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="../Carpeta_Imagenes/x.svg" alt="" style="width: 15px; padding-bottom: 4px; margin-right: 5px;"alt=""></a>
+            <a href="#"
+              ><img
+                src="../Carpeta_iconos/x.svg"
+                alt=""
+                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+                alt=""
+            /></a>
           </li>
           <li>
-            <a href="#"> <img src="../Carpeta_Imagenes/google.svg" alt="" style="width: 15px; padding-bottom: 4px; margin-right: 5px;"alt=""></a>
+            <a href="#"
+              ><img
+                src="../Carpeta_iconos/google.svg"
+                alt=""
+                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+                alt=""
+            /></a>
           </li>
         </ul>
       </div>
