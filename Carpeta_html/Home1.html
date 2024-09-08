@@ -7,6 +7,9 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="../Carpeta_Css/Home1.Css" />
+
     <title>Home1</title>
   </head>
   <body>
@@ -21,7 +24,7 @@
       <h1 id="empresa">NOMBRE DE LA EMPRESA</h1>
       <ul id="opciones">
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Modelos</a></li>
+        <li><a href="../Carpeta_html/Modelos.html">Modelos</a></li>
         <li><a href="#">Publicar</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Blog</a></li>
@@ -31,21 +34,7 @@
         <div class="bx bx-menu" id="iconomenu"></div>
       </div>
     </header>
-
-    <div id="menn">
-      <section id="titulo">
-        <div id="titulo-nbr">
-          <h1>FERRARI Z1 X3</h1>
-          <p>CONDUCE TU LEGADO</p>
-        </div>
-        <div id="opciones2">
-          <a href="#">Comprar ahora</a>
-          <a href="#">Ver Detalles</a>
-        </div>
-      </section>
-    </div>
-
-    <section id="busqueda">
+    <nav id="busqueda">
       <h2>Encuentra tu Auto Ideal</h2>
       <form action="#" method="GET">
         <input type="text" name="marca" placeholder="Buscar por marca" />
@@ -58,7 +47,19 @@
         <input type="number" name="precio_max" placeholder="Precio máximo" />
         <button type="submit">Buscar</button>
       </form>
-    </section>
+    </nav>
+    <div id="menn">
+      <section id="titulo">
+        <div id="titulo-nbr">
+          <h1>FERRARI Z1 X3</h1>
+          <p>CONDUCE TU LEGADO</p>
+        </div>
+        <div id="opciones2">
+          <a href="#">Comprar ahora</a>
+          <a href="#">Ver Detalles</a>
+        </div>
+      </section>
+    </div>
 
     <div id="imagen">
       <img src="../Carpeta_Imagenes/ferrari.png" alt="ferrari" />
@@ -84,6 +85,55 @@
         <h4>Asistencia en carretera 24/7, estés donde estés</h4>
       </div>
       <img src="../Carpeta_Imagenes/experience.png" alt="modelo" />
+    </section>
+
+    <section>
+      <h4>SEMINUEVOS</h4>
+      <h5>
+        ¿Por qué<br />
+        comprar en Autoland?
+      </h5>
+      <a href="#">
+        <button>Ver Seminuevos</button>
+      </a>
+
+      <ul>
+        <li style="width: 477px; margin-right: 5px">
+          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-1.jpg" />
+          <p>+300 Autos en stock</p>
+          <h3>Elige el vehículo seminuevo perfecto para ti.</h3>
+        </li>
+        <li style="width: 477px; margin-left: 5px; margin-right: 5px">
+          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-2.jpg" />
+          <p>Financiamiento hasta en 60 meses</p>
+          <h3>*Previa evaluación crediticia.</h3>
+        </li>
+        <li style="width: 477px; margin-left: 5px; margin-right: 5px">
+          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-3.jpg" />
+          <p>Aceptamos tu auto en parte de pago</p>
+          <h3>*Previa evaluación técnica.</h3>
+        </li>
+        <li style="width: 477px; margin-left: 5px; margin-right: 5px">
+          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-4.jpg" />
+          <p>Autos revisados por expertos</p>
+          <h3>
+            Nuestro stock de autos usados es revisado por técnicos
+            especialistas.
+          </h3>
+        </li>
+        <li>
+          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-5.jpg" />
+          <p>Garantía en caja y motor</p>
+          <h3>*Modelos seleccionados.</h3>
+        </li>
+      </ul>
+
+      <button onclick="window.prefooterCarousel.go('<')">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button onclick="window.prefooterCarousel.go('>')">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </section>
 
     <section>
@@ -154,81 +204,77 @@
     </section>
 
     <footer>
-      <div>
-        <h4><span style="color: red">Nombre de la empresa</span></h4>
-        <ul class="links">
-          <li><a href="#">Locales</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Trabaja con nosotros</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-        </ul>
-        <h4>Tipos de vehículos (Modelos)</h4>
-        <ul class="links">
-          <li><a href="#">Autos</a></li>
-          <li><a href="#">Motos</a></li>
-          <li><a href="#">Buses y camiones</a></li>
-        </ul>
-        <h4>Servicios</h4>
-        <ul class="links">
-          <li><a href="#">Servicio postventa</a></li>
-        </ul>
-        <h4>Contacto</h4>
-        <ul class="links">
-          <li><a href="#">Centro de ayuda</a></li>
-          <li>
-            <a href="#"
-              >clientes@<span style="color: red">Nombre de la empresa</span
-              >peru.com</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i
-                ><img
-                  src="../Carpeta_iconos/whatsapp.svg"
-                  style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                  alt=""
-              /></i>
-              928770412</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4><span style="color: red">Nombre de la empresa</span></h4>
-        <p>
-          Concesionario <span style="color: red">Nombre de la empresa</span> |
-          Todos los derechos reservados © 2024
-        </p>
-        <ul class="redes_sociales">
-          <li>
-            <a href="#"
+      <h4><span style="color: red">Nombre de la empresa</span></h4>
+      <ul class="links">
+        <li><a href="#">Locales</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+      </ul>
+      <h4>Tipos de vehículos (Modelos)</h4>
+      <ul class="links">
+        <li><a href="#">Autos</a></li>
+        <li><a href="#">Motos</a></li>
+        <li><a href="#">Buses y camiones</a></li>
+      </ul>
+      <h4>Servicios</h4>
+      <ul class="links">
+        <li><a href="#">Servicio postventa</a></li>
+      </ul>
+      <h4>Contacto</h4>
+      <ul class="links">
+        <li><a href="#">Centro de ayuda</a></li>
+        <li>
+          <a href="#"
+            >clientes@<span style="color: red">Nombre de la empresa</span
+            >peru.com</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i
               ><img
-                src="../Carpeta_iconos/facebook.svg"
+                src="../Carpeta_iconos/whatsapp.svg"
                 style="width: 15px; padding-bottom: 4px; margin-right: 5px"
                 alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="../Carpeta_iconos/x.svg"
-                alt=""
-                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="../Carpeta_iconos/google.svg"
-                alt=""
-                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                alt=""
-            /></a>
-          </li>
-        </ul>
-      </div>
+            /></i>
+            928770412</a
+          >
+        </li>
+      </ul>
+      <h4><span style="color: red">Nombre de la empresa</span></h4>
+      <p>
+        Concesionario <span style="color: red">Nombre de la empresa</span> |
+        Todos los derechos reservados © 2024
+      </p>
+      <ul class="redes_sociales">
+        <li>
+          <a href="#"
+            ><img
+              src="../Carpeta_iconos/facebook.svg"
+              style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="../Carpeta_iconos/x.svg"
+              alt=""
+              style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+              alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="../Carpeta_iconos/google.svg"
+              alt=""
+              style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+              alt=""
+          /></a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
