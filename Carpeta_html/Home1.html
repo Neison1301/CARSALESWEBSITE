@@ -7,9 +7,6 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="../Carpeta_Css/Home1.Css" />
-
     <title>Home1</title>
   </head>
   <body>
@@ -18,195 +15,211 @@
         <img
           src="../Carpeta_iconos/favicon.svg"
           style="width: 64px; height: 56px"
-          alt=""
+          alt="Logo Empresa"
         />
       </a>
       <h1 id="empresa">NOMBRE DE LA EMPRESA</h1>
-      <ul id="opciones">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="../Carpeta_html/Modelos.html">Modelos</a></li>
-        <li><a href="#">Publicar</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+      <nav>
+        <ul id="opciones">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="../Carpeta_html/Modelos.html">Modelos</a></li>
+          <li><a href="#">Publicar</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="../Carpeta_html/Blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
       <div id="salir">
         <a href="Inicio.html" id="nave">Inicie Sesion</a>
         <div class="bx bx-menu" id="iconomenu"></div>
       </div>
     </header>
-    <nav id="busqueda">
-      <h2>Encuentra tu Auto Ideal</h2>
-      <form action="#" method="GET">
-        <input type="text" name="marca" placeholder="Buscar por marca" />
-        <select name="tipo">
-          <option value="sedan">Sedán</option>
-          <option value="suv">SUV</option>
-          <option value="deportivo">Deportivo</option>
-        </select>
-        <input type="number" name="precio_min" placeholder="Precio mínimo" />
-        <input type="number" name="precio_max" placeholder="Precio máximo" />
-        <button type="submit">Buscar</button>
-      </form>
-    </nav>
-    <div id="menn">
-      <section id="titulo">
-        <div id="titulo-nbr">
-          <h1>FERRARI Z1 X3</h1>
-          <p>CONDUCE TU LEGADO</p>
+
+    <main>
+      <section>
+        <h2>Encuentra tu Auto Ideal</h2>
+        <form action="#" method="GET">
+          <input type="text" name="marca" placeholder="Buscar por marca" />
+          <select name="tipo">
+            <option value="sedan">Sedán</option>
+            <option value="suv">SUV</option>
+            <option value="deportivo">Deportivo</option>
+          </select>
+          <input type="number" name="precio_min" placeholder="Precio mínimo" />
+          <input type="number" name="precio_max" placeholder="Precio máximo" />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <section id="menn">
+        <div id="titulo">
+          <div id="titulo-nbr">
+            <h1>MAZDA</h1>
+            <p>CONDUCE TU LEGADO</p>
+          </div>
+          <div id="opciones2">
+            <a href="#">Comprar ahora</a>
+            <a href="#">Ver Detalles</a>
+          </div>
         </div>
-        <div id="opciones2">
-          <a href="#">Comprar ahora</a>
-          <a href="#">Ver Detalles</a>
+        <div id="imagen">
+          <img
+            src="../Carpeta_Imagenes/auto_de_angelo.png"
+            alt="Ferrari Z1 X3"
+          />
         </div>
       </section>
-    </div>
 
-    <div id="imagen">
-      <img src="../Carpeta_Imagenes/ferrari.png" alt="ferrari" />
-    </div>
+      <section>
+        <p>Experiencia del Cliente</p>
+        <h2>Garantizamos la mejor experiencia del cliente.</h2>
+        <div class="exp">
+          <h4>Precios competitivos que se ajustan a tu presupuesto</h4>
+        </div>
+        <div class="exp">
+          <h4>Opciones de renta accesibles y flexibles</h4>
+        </div>
+        <div class="exp">
+          <h4>Las mejores garantías extendidas para tu auto</h4>
+        </div>
+        <div class="exp">
+          <h4>Asistencia en carretera 24/7, estés donde estés</h4>
+        </div>
+        <img src="../Carpeta_Imagenes/experience.png" alt="modelo" />
+      </section>
 
-    <section>
-      <p>Experiencia del Cliente</p>
-      <h2>Garantizamos la mejor experiencia del cliente.</h2>
-      <div class="exp">
-        <span><i class="ri-price-tag-3-fill"></i></span>
-        <h4>Precios competitivos que se ajustan a tu presupuesto</h4>
-      </div>
-      <div class="exp">
-        <span><i class="ri-money-rupee-circle-fill"></i></span>
-        <h4>Opciones de renta accesibles y flexibles</h4>
-      </div>
-      <div class="exp">
-        <span><i class="ri-bank-card-fill"></i></span>
-        <h4>Las mejores garantías extendidas para tu auto</h4>
-      </div>
-      <div class="exp">
-        <span><i class="ri-customer-service-2-fill"></i></span>
-        <h4>Asistencia en carretera 24/7, estés donde estés</h4>
-      </div>
-      <img src="../Carpeta_Imagenes/experience.png" alt="modelo" />
-    </section>
+      <section>
+        <h4>SEMINUEVOS</h4>
+        <h5>¿Por qué comprar en Autoland?</h5>
+        <a href="../Carpeta_html/interfaazVc.HTML"
+          ><button>Ver SemiUsados</button></a
+        >
 
-    <section>
-      <h4>SEMINUEVOS</h4>
-      <h5>
-        ¿Por qué<br />
-        comprar en Autoland?
-      </h5>
-      <a href="#">
-        <button>Ver Seminuevos</button>
-      </a>
+        <ul>
+          <li>
+            <img
+              loading="lazy"
+              src="../Carpeta_Imagenes/beneficio-1.jpg"
+              alt="+300 Autos en stock"
+            />
+            <p>+300 Autos en stock</p>
+            <h3>Elige el vehículo seminuevo perfecto para ti.</h3>
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="../Carpeta_Imagenes/beneficio-2.jpg"
+              alt="Financiamiento hasta en 60 meses"
+            />
+            <p>Financiamiento hasta en 60 meses</p>
+            <h3>*Previa evaluación crediticia.</h3>
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="../Carpeta_Imagenes/beneficio-3.jpg"
+              alt="Aceptamos tu auto en parte de pago"
+            />
+            <p>Aceptamos tu auto en parte de pago</p>
+            <h3>*Previa evaluación técnica.</h3>
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="../Carpeta_Imagenes/beneficio-4.jpg"
+              alt="Autos revisados por expertos"
+            />
+            <p>Autos revisados por expertos</p>
+            <h3>
+              Nuestro stock de autos usados es revisado por técnicos
+              especialistas.
+            </h3>
+          </li>
+          <li>
+            <img
+              loading="lazy"
+              src="../Carpeta_Imagenes/beneficio-5.jpg"
+              alt="Garantía en caja y motor"
+            />
+            <p>Garantía en caja y motor</p>
+            <h3>*Modelos seleccionados.</h3>
+          </li>
+        </ul>
 
-      <ul>
-        <li style="width: 477px; margin-right: 5px">
-          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-1.jpg" />
-          <p>+300 Autos en stock</p>
-          <h3>Elige el vehículo seminuevo perfecto para ti.</h3>
-        </li>
-        <li style="width: 477px; margin-left: 5px; margin-right: 5px">
-          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-2.jpg" />
-          <p>Financiamiento hasta en 60 meses</p>
-          <h3>*Previa evaluación crediticia.</h3>
-        </li>
-        <li style="width: 477px; margin-left: 5px; margin-right: 5px">
-          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-3.jpg" />
-          <p>Aceptamos tu auto en parte de pago</p>
-          <h3>*Previa evaluación técnica.</h3>
-        </li>
-        <li style="width: 477px; margin-left: 5px; margin-right: 5px">
-          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-4.jpg" />
-          <p>Autos revisados por expertos</p>
-          <h3>
-            Nuestro stock de autos usados es revisado por técnicos
-            especialistas.
-          </h3>
-        </li>
-        <li>
-          <img loading="lazy" src="../Carpeta_Imagenes/beneficio-5.jpg" />
-          <p>Garantía en caja y motor</p>
-          <h3>*Modelos seleccionados.</h3>
-        </li>
-      </ul>
+        <button onclick="window.prefooterCarousel.go('<')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button onclick="window.prefooterCarousel.go('>')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </section>
 
-      <button onclick="window.prefooterCarousel.go('<')">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button onclick="window.prefooterCarousel.go('>')">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-    </section>
-
-    <section>
-      <div>
-        <h3>BLOG</h3>
-        <h4>Conoce más sobre el mundo automotriz</h4>
-        <table>
-          <tr>
-            <td>
-              <a href="#">
-                <img
-                  loading="lazy"
-                  src="../Carpeta_Imagenes/tipo-motor-autos-electricos.jpg"
-                  alt="Thumbnail ¿Qué tipo de motor usan los autos eléctricos?"
-                  style="height: 577px; width: auto"
-                />
-                <h3 class="c_orange t_h5 f_uBold m-0"></h3>
-                <h3>¿Qué tipo de motor usan los autos eléctricos?</h3>
-                <p>
-                  El auge de los sedanes, hatchbacks y SUV eléctricos está
-                  revolucionando la industria automotriz, atrayendo a
-                  conductores que buscan alternativas más limpias […]
-                </p>
-              </a>
-            </td>
-            <td>
-              <a href="#">
-                <img
-                  loading="lazy"
-                  src="https://autoland.com.pe/wp-content/uploads/2021/05/Plantilla-Blog-Autoland-1.jpg"
-                  style="height: 577px; width: auto"
-                  alt="Thumbnail ¿Qué es el turbo y cómo influye en el desempeño de un auto?"
-                />
-                <h3 class="c_orange t_h5 f_uBold m-0"></h3>
-                <h3>
-                  ¿Qué es el turbo y cómo influye en el desempeño de un auto?
-                </h3>
-                <p class="m-0 f_lRegular h6">
-                  Te contamos la función del turbo en el motor de un auto y
-                  todas las ventajas y desempeño que puede brindar.
-                </p>
-              </a>
-            </td>
-            <td>
-              <a href="#">
-                <img
-                  loading="lazy"
-                  src="https://autoland.com.pe/wp-content/uploads/2024/08/diferencias-repuestos-originales-genericos.jpg"
-                  alt="Thumbnail 8 diferencias entre repuestos originales y genéricos"
-                />
-                <h3 class="c_orange t_h5 f_uBold m-0"></h3>
-                <h3 class="m-0 t_h4 f_lBold">
-                  8 diferencias entre repuestos originales y genéricos
-                </h3>
-                <p class="m-0 f_lRegular h6">
-                  Cuando se trata de mantener tu vehículo en óptimas
-                  condiciones, uno de los aspectos más importantes es la
-                  elección de los repuestos […]
-                </p>
-              </a>
-            </td>
-          </tr>
-        </table>
-        <a href="#">
-          <button class="blog_btn_link">Ir al Blog</button>
-        </a>
-      </div>
-    </section>
+      <section>
+        <div>
+          <h3>BLOG</h3>
+          <h4>Conoce más sobre el mundo automotriz</h4>
+          <table>
+            <tr>
+              <td>
+                <a href="#">
+                  <img
+                    loading="lazy"
+                    src="../Carpeta_Imagenes/tipo-motor-autos-electricos.jpg"
+                    alt=" ¿Qué tipo de motor usan los autos eléctricos?"
+                    style="height: 577px; width: auto"
+                  />
+                  <h3>¿Qué tipo de motor usan los autos eléctricos?</h3>
+                  <p>
+                    El auge de los sedanes, hatchbacks y SUV eléctricos está
+                    revolucionando la industria automotriz, atrayendo a
+                    conductores que buscan alternativas más limpias […]
+                  </p>
+                </a>
+              </td>
+              <td>
+                <a href="#">
+                  <img
+                    loading="lazy"
+                    src="../Carpeta_Imagenes/Plantilla-Blog-Autoland-1.jpg"
+                    style="height: 577px; width: auto"
+                    alt="Thumbnail ¿Qué es el turbo y cómo influye en el desempeño de un auto?"
+                  />
+                  <h3>
+                    ¿Qué es el turbo y cómo influye en el desempeño de un auto?
+                  </h3>
+                  <p>
+                    Te contamos la función del turbo en el motor de un auto y
+                    todas las ventajas y desempeño que puede brindar.
+                  </p>
+                </a>
+              </td>
+              <td>
+                <a href="#">
+                  <img
+                    loading="lazy"
+                    src="../Carpeta_Imagenes/diferencias-repuestos-originales-genericos.jpg"
+                    alt="Thumbnail 8 diferencias entre repuestos originales y genéricos"
+                  />
+                  <h3>8 diferencias entre repuestos originales y genéricos</h3>
+                  <p>
+                    Cuando se trata de mantener tu vehículo en óptimas
+                    condiciones, uno de los aspectos más importantes es la
+                    elección de los repuestos […]
+                  </p>
+                </a>
+              </td>
+            </tr>
+          </table>
+          <a href="#">
+            <button>Ir al Blog</button>
+          </a>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <h4><span style="color: red">Nombre de la empresa</span></h4>
       <ul class="links">
-        <li><a href="#">Locales</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Trabaja con nosotros</a></li>
         <li><a href="#">Términos y condiciones</a></li>
@@ -219,7 +232,7 @@
       </ul>
       <h4>Servicios</h4>
       <ul class="links">
-        <li><a href="#">Servicio postventa</a></li>
+        <li><a href="#">Servicio SemiUsados</a></li>
       </ul>
       <h4>Contacto</h4>
       <ul class="links">
