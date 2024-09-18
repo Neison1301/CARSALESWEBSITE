@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Venta y Compra</title>
+    <!--la conecccin de css para el diseño de la pagina-->
+    <link rel="stylesheet" href="#">
+</head>
+<body>
+    <!--ENCABEZADO DE PAGINA-->
+    <header>
+      <a href="#" id="logo">
+          <img
+          src="/Home/Carpeta_iconos/favicon.svg"
+          style="width: 64px; height: 56px ; background: black;"
+          alt=""
+          />
+      </a>
+      <h1 id="empresa">ONE</h1>
+      <ul id="opciones">
+          <li><a href="/Home/Carpeta_html/Home1.html">Inicio</a></li>
+          <li><a href="/Modelos/Carpeta_html/modelos.html">Modelos</a></li>
+          <li><a href="/Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
+          <li><a href="/Servicios/Carpeta_html/serviciosdelaempresa.html">Servicios</a></li>
+          <li><a href="/Blog/Carpeta_html/Blog.html">Blog</a></li>
+      </ul>
+      <div id="salir">
+          <a href="/Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
+          <div class="bx bx-menu" id="iconomenu"></div>
+      </div>
+  </header>
+<!--BARRA DE NAVEGACION-->
+<nav id="busqueda">
+    <h2>Encuentra tu Auto Ideal</h2>
+    <form action="#" method="GET">
+      <input type="text" name="marca" placeholder="Buscar por marca" />
+      <select name="tipo">
+        <option value="sedan">Sedán</option>
+        <option value="suv">SUV</option>
+        <option value="deportivo">Deportivo</option>
+      </select>
+      <input type="number" name="precio_min" placeholder="Precio mínimo" />
+      <input type="number" name="precio_max" placeholder="Precio máximo" />
+      <button type="submit">Buscar</button>
+    </form>
+    </nav>
+<!--INFORMACION PRINCIPAL-->
+<main>
+<section class="banner">
+<center><H2>BRINDANOS LOS DATOS DE TU AUTO</H2> </center>
+<form id="form1" method="get"action="enviar.html">
+<p>
+<fieldset>
+    <legend>Año del Auto</legend>
+    <input type="number"id="txtnAño" placeholder="INGRESE EL AÑO"></br>
+</fieldset>
+</p>
+<p>
+<fieldset>
+    <legend>Kilometraje</legend>
+    <input type="number"id="txtKilometraje" placeholder="INGRESE EL KilOMETRAJE"></br>
+</fieldset>
+</p>
+<p>
+<fieldset>
+    <legend>Marca</legend>
+    <input type="text"id="txtMarca"placeholder="INGRESE LA MARCA"></br>
+</fieldset>
+</p>
+<fieldset>
+    <legend>Modelo</legend>
+    <input type="text"id="txtnombre"placeholder="INGRESE EL MODELO"></br>
+</fieldset>
+</p>
+<p>
+    <fieldset>
+    <legend>Version</legend>
+    <input type="text"id="txtnombre"placeholder="INGRESE LA VERSION"></br>
+</fieldset>
+</p>
+<p>
+<fieldset>
+    <legend>Color</legend>
+    <input type="text"id="txtnombre"placeholder="INGRESE EL COLOR"></br>
+</fieldset>
+</p>
+<p>
+<fieldset>
+    <legend>Combustible</legend>
+    <select id="cbocombustible">
+    <option>Seleccione</option>
+    <option>GNC</option>
+    <option>GASOLINA</option>
+</select>
+</fieldset>
+</p>
+<fieldset>
+    <legend>Precio</legend>
+    <input type="number"id="txtPrecio"placeholder="INGEESE EL PRECIO"></br>
+</fieldset>
+</p>
+<p>
+    <h2>DONDE SE ENCUENTRA </h2>
+    <p>
+    <fieldset>
+        <legend>DEPARTAMENTO</legend>
+        <input type="text"id="txtdepartamento"placeholder="INGRESE EL DPARTAMENTO"></br>
+    </fieldset>
+</p>
+<p>
+    <fieldset>
+        <legend>PROVINCIA</legend>
+        <input type="text"id="txtProvincia"placeholder="INGRESE LA PROVINCIA"></br>
+    </fieldset>
+</p>
+</p>
+<p>
+    <p>
+    <center><H2>BRINDENOS SU NUMERO TELEFONICO</H2>
+    <fieldset>
+        <legend>TELEFONO</legend>
+        <input type="number"id="txtProvincia"placeholder="INGRESE SU NUEMERO"></br>
+    </fieldset></center>
+    </p>
+    <h2>SELECCIONE LAS FOTOS DE TU AUTO</h2>
+</p>
+<p>
+    <textarea id="txtComentarios"cols="80" rows="10" placeholder="COLOQUE LA IMAGEN"></textarea>
+</p>
+<p>
+    <input type="submit"id="btenviar"value="ENVIAR INFORMACION">
+</p>
+
+</form>
+</section>
+</main>
+<!--PIE DE PAGINA-->
+<footer>
+    <h4><span style="color: red">ONE.SAC</span></h4>
+    <ul class="links">
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Trabaja con nosotros</a></li>
+      <li><a href="/Documentacion/Carpeta_Html/TerminosYcondiciones.html">Términos y condiciones</a></li>
+    </ul>
+    <h4>Tipos de vehículos (Modelos)</h4>
+    <ul class="links">
+      <li><a href="#">Sedán</a></li>
+      <li><a href="#">SUV</a></li>
+      <li><a href="#">Hatchback</a></li>
+      <li><a href="#">Pick-up</a></li>
+      <li><a href="#">Deportivo</a></li>
+      <li><a href="#">Eléctrico</a></li>
+      <li><a href="#">4x4</a></li>
+      <li><a href="#">Coupé</a></li>
+      <li><a href="#">Convertible</a></li>
+      <li><a href="#">Van</a></li>
+    </ul>      
+    <h4>Servicios</h4>
+    <ul class="links">
+      <li><a href="#">Servicio SemiUsados</a></li>
+    </ul>
+    <h4>Contacto</h4>
+    <ul class="links">
+      <li><a href="#">Centro de ayuda</a></li>
+      <li>
+        <a href="#"
+          >clientes@<span style="color: red">ONE.SAC</span
+          >peru.com</a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><i
+            ><img
+              src="/Home/Carpeta_iconos/whatsapp.svg"
+              style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+              alt=""
+          /></i>
+          928770412</a
+        >
+      </li>
+    </ul>
+    <h4><span style="color: red">ONE.SAC</span></h4>
+    <p>
+      Concesionario <span style="color: red">ONE.SAC</span> |
+      Todos los derechos reservados © 2024
+    </p>
+    <ul class="redes_sociales">
+      <li>
+        <a href="#"
+          ><img
+            src="/Home/Carpeta_iconos/facebook.svg"
+            style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="/Home/Carpeta_iconos/x.svg"
+            alt=""
+            style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+            alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="/Home/Carpeta_iconos/google.svg"
+            alt=""
+            style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+            alt=""
+        /></a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+</html>
