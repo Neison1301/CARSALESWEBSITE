@@ -20,7 +20,7 @@ header, main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
 
 }
 
@@ -30,14 +30,15 @@ header.rc {
   line-height: 1.2;
 }
 .rc img {
-  width: 50%;
-  max-width: 60%;
+  width: 85%;
+  height: auto;
+  justify-content: center;
 }
 .msj .bienvenido{
   padding: 14px;
   color: #030303;
   text-align: center;
-  font-family: "New Amsterdam", ;
+  font-family: "New Amsterdam" ;
   font-size: 48px;
   font-style: normal;
   font-weight: 80;

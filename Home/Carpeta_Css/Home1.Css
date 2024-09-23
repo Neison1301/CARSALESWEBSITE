@@ -12,6 +12,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-family: "New Amsterdam";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 80;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   color: #475569;
@@ -34,6 +45,7 @@ header {
 }
 
 main {
+  background: white;
   margin-top: 60px;
   display: flex;
   position: relative;
@@ -67,6 +79,7 @@ main {
 }
 #opciones a:hover {
   color: #ae8957; /*cambiar el color de la animacciona al precionar las opciones*/
+  transform: scale(1.3);
 }
 
 #salir {
@@ -228,18 +241,17 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background: white;
-  height: 100vh;
+  height: 90vh;
 }
 
 #Promocions {
   position: relative;
   margin-top: 4%;
   text-align: center;
-  font-family: "Inter";
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 55px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 #promo_links {
@@ -248,10 +260,8 @@ main {
   align-items: center;
   height: 50%;
   background: white;
-  padding: 15px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 15%;
 }
 
 #promo_links li {
@@ -266,6 +276,10 @@ main {
   width: 400px;
   height: 100%;
   background-size: cover;
+  transition: transform 0.6s ease;
+}
+.lzmtos_img:hover {
+  transform: scale(1.1);
 }
 
 ul#links li.linkslogo {
@@ -273,7 +287,32 @@ ul#links li.linkslogo {
   overflow: hidden;
 }
 
+#verseminuevos button {
+  position: relative;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 9px 24px;
+  background: none;
+  border: 2px solid #475569;
+  border-radius: 7px;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.6s ease;
+}
+
+#verseminuevos button:hover {
+  transform: translateY(-7px);
+  border: 2px solid #ae8957;
+  color: #ae8957;
+}
+
 main #galeria {
+  background: white;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -284,15 +323,11 @@ main #galeria {
   margin: auto;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(300px, 1fr)
-  );
-  grid-auto-rows: minmax(0, 1fr); 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
   grid-gap: 20px;
   height: 80vh;
   overflow: hidden;
-  
 }
 
 #videos .video-item {
@@ -321,44 +356,60 @@ main #galeria {
   transform: scale(1.05);
 }
 
-main #preferencia {
-  width: 100%;
-  height: auto;
-  background-color: #00142e;
-  padding: 50px 0;
-  text-align: center;
+video::-webkit-media-controls {
+  display: none !important;
 }
 
-#preferencia h4 {
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+main #preferencia {
+  width: 100%;
+  height: 95vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) -0.12%,
+    #00142e 2.9%
+  );
+  padding: 50px 0;
+  text-align: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+#preferencia h2 {
   color: #f7f7f7;
-  font-family: "Inter", sans-serif;
-  font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #preferencia ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
   padding: 0;
-  list-style: none;
 }
 
-.beneficio {
-  max-width: 300px;
+#preferencia ul .beneficio {
   text-align: center;
+  height: 100vh;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .beneficio img {
   width: 100%;
-  height: auto;
+  height: 40%;
   border-radius: 10px;
 }
 
 .beneficio p {
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 25px;
   font-family: Arial;
   font-size: 16px;
   font-style: normal;
@@ -376,21 +427,22 @@ main #preferencia {
 footer {
   background: #00142e;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-
-  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  height: 90vh;
+  width: 100%;
 }
+
 footer #footer_enlaces {
   background: #00142e;
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
   text-align: justify;
 }
 
 #footer_enlaces section {
-  padding: 40%;
+  padding: 30%;
+  justify-content: center;
 }
 
 #footer_enlaces .footer_links {
@@ -450,6 +502,32 @@ footer #footer_derechos {
   display: flex;
   padding: 25px 20px;
 }
+
+#f1_imagenes,
+#f2_imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#f1_imagenes a,
+#f2_imagenes a {
+  margin: 0 10px;
+}
+
+#f1_imagenes img,
+#f2_imagenes img {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+#f2_imagenes img {
+  width: auto;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   #titulo {
     grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
