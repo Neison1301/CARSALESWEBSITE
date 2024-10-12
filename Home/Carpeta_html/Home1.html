@@ -9,6 +9,9 @@
     />
 
     <link rel="stylesheet" href="../Carpeta_Css/Home1.Css" />
+    <script>
+      alert("Bienvenido");
+    </script>
 
     <title>Home1</title>
   </head>
@@ -81,51 +84,9 @@
                 alt=""
               />
             </li>
-            <li class="linkslogo">
-              <img
-                src="../Carpeta_Imagenes/logos/Hyundai-logo.png.png"
-                alt=""
-              />
-            </li>
-            <li class="linkslogo">
-              <img src="../Carpeta_Imagenes/logos/Nissan-logo.png.png" alt="" />
-            </li>
-            <li class="linkslogo">
-              <img src="../Carpeta_Imagenes/logos/Kia-logo.png.png" alt="" />
-            </li>
-            <li class="linkslogo">
-              <img src="../Carpeta_Imagenes/logos/Ford-logo.png.png" alt="" />
-            </li>
-            <li class="linkslogo">
-              <img src="../Carpeta_Imagenes/logos/Mazda-logo.png.png" alt="" />
-            </li>
-            <li class="linkslogo">
-              <img src="../Carpeta_Imagenes/logos/Suzuki-logo.png.png" alt="" />
-            </li>
-            <li class="linkslogo">
-              <img
-                src="../Carpeta_Imagenes/logos/Mitsubishi-logo.png.png"
-                alt=""
-              />
-            </li>
-            <li class="linkslogo">
-              <img
-                src="../Carpeta_Imagenes/logos/Peugeot-logo.png.png"
-                alt=""
-              />
-            </li>
           </ul>
         </section>
       </section>
-
-      <script>
-        const links = document.querySelector("ul#links");
-        const total_links = links.children.length;
-
-        for (let i = 0; i < total_links; i++) {
-          links.append(links.children[i].cloneNode(true));
-        }
-      </script>
 
       <section id="section_promos">
         <h2 id="Promocions">Promociones</h2>
@@ -159,35 +120,58 @@
           <button>Ver Seminuevos</button>
         </a>
       </section>
+      <h3 id="BLOGG">BLOG</h3>
+      <section id="galeria2">
+        <table id="videos2">
+
+          <tr>
+            <td colspan="2">
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos1.mp4" style="height: calc( 150vh/2);"  controls autoplay loop muted></video></a>
+              </article>
+            </td>
+            <td>
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos4.mp4" controls autoplay loop muted></video></a>
+              </article>
+            </td>
+          </tr>
 
 
-      <section id="galeria">
-        <h2>BLOG</h2>
-        <section id="videos">
-          <article class="video-item">
-            <a href="#"><video src="../videos/autos1.mp4" controls autoplay loop muted></video></a>        
-          </article>
-          <article class="video-item">
-            <a href="#"><video src="../videos/autos4.mp4" controls autoplay loop muted></video></a>           
-          </article>
-          <article class="video-item">
-            <a href="#"><video src="../videos/autos3.mp4" controls autoplay loop muted></video></a>
-          </article>
-          <article class="video-item">
-            <a href="#"><video src="../videos/autos2.mp4" controls autoplay loop muted></video></a>
-          </article>
-          <article class="video-item">
-            <a href="#"></a>
-            <video src="../videos/autos5.mp4" controls autoplay loop muted></video>
-          </article>
-          <article class="video-item">
-            <a href="#"><video src="../videos/autos.mp4" controls autoplay loop muted></video></a>
-          </article>
-          <article class="video-item">
-            <a href="#"><video src="../videos/autos.mp4" controls autoplay loop muted></video></a>
-          </article>
-        </section>
+          <tr>
+            <td>
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos2.mp4" controls autoplay loop muted></video></a>
+              </article>
+            </td>
+                        
+            <td rowspan="2">
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos3.mp4" controls autoplay loop muted></video></a>
+              </article>
+            </td>
+
+            <td>
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos5.mp4" controls autoplay loop muted></video></a>
+              </article>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos.mp4" controls autoplay loop muted></video></a>
+              </article>
+            </td>
+            <td>
+              <article class="video-item2">
+                <a href="#"><video src="../videos/autos.mp4" controls autoplay loop muted></video></a>
+              </article>
+            </td>
+          </tr>
+        </table>
       </section>
+ 
 
       <section id="preferencia">
         <h2>
@@ -287,7 +271,6 @@
           </section>
         </section>
       </section>
-
       <section id="footer_derechos">
         <p id="Precios_bonos">
           Precios y bonos publicados en este sitio son referenciales,
