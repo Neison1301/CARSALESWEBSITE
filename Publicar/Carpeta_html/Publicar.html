@@ -5,216 +5,238 @@
     <meta name="viewport" content="width=}, initial-scale=1.0">
     <title>Venta y Compra</title>
     <!--la conecccin de css para el diseño de la pagina-->
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="/Publicar/Carpeta_Css/Publicar.css">
+    <script src="/Publicar/javaScrip/Publicar.js"></script>
+    
 </head>
+
 <body>
     <!--ENCABEZADO DE PAGINA-->
     <header>
-      <a href="#" id="logo">
-          <img
-          src="/Home/Carpeta_iconos/favicon.svg"
-          style="width: 64px; height: 56px ; background: black;"
+      <a href="#" id="logo"
+        ><img
+          src="/Home/Carpeta_Imagenes/icon.jpg"
           alt=""
-          />
+        />
       </a>
-      <h1 id="empresa">ONE</h1>
-      <ul id="opciones">
+
+      <nav>
+        <ul id="opciones">
           <li><a href="/Home/Carpeta_html/Home1.html">Inicio</a></li>
           <li><a href="/Modelos/Carpeta_html/modelos.html">Modelos</a></li>
           <li><a href="/Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
-          <li><a href="/Servicios/Carpeta_html/serviciosdelaempresa.html">Servicios</a></li>
+          <li>
+            <a href="/Servicios/Carpeta_html/serviciosdelaempresa.html"
+              >Servicios</a
+            >
+          </li>
           <li><a href="/Blog/Carpeta_html/Blog.html">Blog</a></li>
-      </ul>
+        </ul>
+      </nav>
+
       <div id="salir">
-          <a href="/Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
-          <div class="bx bx-menu" id="iconomenu"></div>
+        <a href="/Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
+        <div class="bx bx-menu" id="iconomenu"></div>
       </div>
-  </header>
-<!--BARRA DE NAVEGACION-->
-<nav id="busqueda">
-    <h2>Encuentra tu Auto Ideal</h2>
-    <form action="#" method="GET">
-      <input type="text" name="marca" placeholder="Buscar por marca" />
-      <select name="tipo">
-        <option value="sedan">Sedán</option>
-        <option value="suv">SUV</option>
-        <option value="deportivo">Deportivo</option>
-      </select>
-      <input type="number" name="precio_min" placeholder="Precio mínimo" />
-      <input type="number" name="precio_max" placeholder="Precio máximo" />
-      <button type="submit">Buscar</button>
-    </form>
-    </nav>
+    </header>
 <!--INFORMACION PRINCIPAL-->
 <main>
-<section class="banner">
-<center><H2>BRINDANOS LOS DATOS DE TU AUTO</H2> </center>
-<form id="form1" method="get"action="enviar.html">
-<p>
-<fieldset>
-    <legend>Año del Auto</legend>
-    <input type="number"id="txtnAño" placeholder="INGRESE EL AÑO"></br>
-</fieldset>
-</p>
-<p>
-<fieldset>
-    <legend>Kilometraje</legend>
-    <input type="number"id="txtKilometraje" placeholder="INGRESE EL KilOMETRAJE"></br>
-</fieldset>
-</p>
-<p>
-<fieldset>
-    <legend>Marca</legend>
-    <input type="text"id="txtMarca"placeholder="INGRESE LA MARCA"></br>
-</fieldset>
-</p>
-<fieldset>
-    <legend>Modelo</legend>
-    <input type="text"id="txtnombre"placeholder="INGRESE EL MODELO"></br>
-</fieldset>
-</p>
-<p>
-    <fieldset>
-    <legend>Version</legend>
-    <input type="text"id="txtnombre"placeholder="INGRESE LA VERSION"></br>
-</fieldset>
-</p>
-<p>
-<fieldset>
-    <legend>Color</legend>
-    <input type="text"id="txtnombre"placeholder="INGRESE EL COLOR"></br>
-</fieldset>
-</p>
-<p>
-<fieldset>
-    <legend>Combustible</legend>
-    <select id="cbocombustible">
-    <option>Seleccione</option>
-    <option>GNC</option>
-    <option>GASOLINA</option>
-</select>
-</fieldset>
-</p>
-<fieldset>
-    <legend>Precio</legend>
-    <input type="number"id="txtPrecio"placeholder="INGEESE EL PRECIO"></br>
-</fieldset>
-</p>
-<p>
-    <h2>DONDE SE ENCUENTRA </h2>
-    <p>
-    <fieldset>
-        <legend>DEPARTAMENTO</legend>
-        <input type="text"id="txtdepartamento"placeholder="INGRESE EL DPARTAMENTO"></br>
-    </fieldset>
-</p>
-<p>
-    <fieldset>
-        <legend>PROVINCIA</legend>
-        <input type="text"id="txtProvincia"placeholder="INGRESE LA PROVINCIA"></br>
-    </fieldset>
-</p>
-</p>
-<p>
-    <p>
-    <center><H2>BRINDENOS SU NUMERO TELEFONICO</H2>
-    <fieldset>
-        <legend>TELEFONO</legend>
-        <input type="number"id="txtProvincia"placeholder="INGRESE SU NUEMERO"></br>
-    </fieldset></center>
-    </p>
-    <h2>SELECCIONE LAS FOTOS DE TU AUTO</h2>
-</p>
-<p>
-    <textarea id="txtComentarios"cols="80" rows="10" placeholder="COLOQUE LA IMAGEN"></textarea>
-</p>
-<p>
-    <input type="submit"id="btenviar"value="ENVIAR INFORMACION">
-</p>
+  <section class="banner">
+  <center><H2>BRINDANOS LOS DATOS DE TU AUTO</H2> </center>
+  <!--PRIMERA TABLA-->
+  <form id="form1" method="---"action="">
+  
+    <center>
+    <table>
+      <tr>
+    <td><p>
+  <fieldset>
+      <legend>Año del Auto</legend>
+      <input type="number"id="txtnAño" placeholder="INGRESE EL AÑO"></br>
+  </fieldset>
+  </p></td>
+  
+  <td><p>
+  <fieldset>
+      <legend>Kilometraje</legend>
+      <input type="number"id="txtKilometraje" placeholder="INGRESE EL KilOMETRAJE"></br>
+  </fieldset>
+  </p></td>
+  <td><p>
+  <fieldset>
+      <legend>Marca</legend>
+      <input type="text"id="txtMarca"placeholder="INGRESE LA MARCA"></br>
+  </fieldset>
+  </p></td>
+  <td><p>
+  <fieldset>
+      <legend>Modelo</legend>
+      <input type="text"id="txtnombre"placeholder="INGRESE EL MODELO"></br>
+  </fieldset>
+  </p></td>
+  </tr>
+  </table>
+  
+  <table>
+  <td><p>
+      <fieldset>
+      <legend>Version</legend>
+      <input type="text"id="txtnombre"placeholder="INGRESE LA VERSION"></br>
+  </fieldset>
+  </p></td>
+  <td><p>
+  <fieldset>
+      <legend>Color</legend>
+      <input type="text"id="txtnombre"placeholder="INGRESE EL COLOR"></br>
+  </fieldset>
+  </p></td>
+  <td><p>
+  <fieldset>
+      <legend>Combustible</legend>
+      <select id="cbocombustible">
+      <option>Seleccione</option>
+      <option>GNC</option>
+      <option>GASOLINA</option>
+  </select>
+  </fieldset>
+  </p></td>
+  <td><p>
+  <fieldset>
+      <legend>Precio</legend>
+      <input type="number"id="txtPrecio"placeholder="INGEESE EL PRECIO"></br>
+  </fieldset>
+  </p></td>
+  </table>
+  
+    <!--SEGUNDA TABLA-->
+  
+      <h2>DONDE SE ENCUENTRA </h2>
+      <table>
+        <tr>
+  <td><p>
+      <fieldset>
+          <legend>DEPARTAMENTO</legend>
+          <input type="text"id="txtdepartamento"placeholder="INGRESE EL DPARTAMENTO"></br>
+      </fieldset>
+  </p></td>
+  <td><p>
+      <fieldset>
+          <legend>PROVINCIA</legend>
+          <input type="text"id="txtProvincia"placeholder="INGRESE LA PROVINCIA"></br>
+      </fieldset>
+    </p></td>
+  </p></td>
+  </tr>
+  </table>
 
-</form>
-</section>
-</main>
+
+  <TABle> 
+  <TR>
+  <TD><p>
+      <p>
+      <center><H2>BRINDENOS SU NUMERO TELEFONICO</H2>
+      <fieldset>
+          <legend>TELEFONO</legend>
+          <input type="number"id="txtProvincia"placeholder="INGRESE SU NUEMERO"></br>
+      </fieldset></center>
+      </p>
+    </td>
+  </tr>
+  </table>
+</center>
+<center>
+<h2>SELECCIONE LAS FOTOS DE TU AUTO</h2>
+<table>
+  <tr>
+  <td><p> 
+      <textarea id="txtComentarios"cols="80" rows="10" placeholder="COLOQUE LA IMAGEN" risade="none"></textarea>
+  </p>
+  <p id="botton_enviar">
+   <center><button value="presiona" id="btenviar">ENVIAR INFORMACION</button></center>
+  </p>
+  </td>
+  </tr>
+  </table>
+  </form>
+  </table>
+  </center>
+  </section>
+  </main>
+  
+
 <!--PIE DE PAGINA-->
 <footer>
-    <h4><span style="color: red">ONE.SAC</span></h4>
-    <ul class="links">
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Trabaja con nosotros</a></li>
-      <li><a href="/Documentacion/Carpeta_Html/TerminosYcondiciones.html">Términos y condiciones</a></li>
-    </ul>
-    <h4>Tipos de vehículos (Modelos)</h4>
-    <ul class="links">
-      <li><a href="#">Sedán</a></li>
-      <li><a href="#">SUV</a></li>
-      <li><a href="#">Hatchback</a></li>
-      <li><a href="#">Pick-up</a></li>
-      <li><a href="#">Deportivo</a></li>
-      <li><a href="#">Eléctrico</a></li>
-      <li><a href="#">4x4</a></li>
-      <li><a href="#">Coupé</a></li>
-      <li><a href="#">Convertible</a></li>
-      <li><a href="#">Van</a></li>
-    </ul>      
-    <h4>Servicios</h4>
-    <ul class="links">
-      <li><a href="#">Servicio SemiUsados</a></li>
-    </ul>
-    <h4>Contacto</h4>
-    <ul class="links">
-      <li><a href="#">Centro de ayuda</a></li>
-      <li>
-        <a href="#"
-          >clientes@<span style="color: red">ONE.SAC</span
-          >peru.com</a
-        >
-      </li>
-      <li>
-        <a href="#"
-          ><i
-            ><img
-              src="/Home/Carpeta_iconos/whatsapp.svg"
-              style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-              alt=""
-          /></i>
-          928770412</a
-        >
-      </li>
-    </ul>
-    <h4><span style="color: red">ONE.SAC</span></h4>
-    <p>
-      Concesionario <span style="color: red">ONE.SAC</span> |
-      Todos los derechos reservados © 2024
+  <section id="footer_enlaces">
+    <section>
+      <h4 class="footer_titulos">ONE.SAC</h4>
+      <ul class="footer_links">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Promociones</a></li>
+        <li>
+          <a href="/Documentacion/Carpeta_Html/TerminosYcondiciones.html"
+            >Términos y condiciones</a
+          >
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h4 class="footer_titulos">Tipos de vehículos (Modelos)</h4>
+      <ul class="footer_links">
+        <li><a href="#">Sedán</a></li>
+        <li><a href="#">SUV</a></li>
+        <li><a href="#">Hatchback</a></li>
+        <li><a href="#">Pick-up</a></li>
+        <li><a href="#">Deportivo</a></li>
+        <li><a href="#">Eléctrico</a></li>
+        <li><a href="#">4x4</a></li>
+        <li><a href="#">Van</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4 class="footer_titulos">Servicios</h4>
+      <ul class="footer_links"></ul>
+    </section>
+    <section>
+      <h4 class="footer_titulos">Contacto</h4>
+      <ul class="footer_links">
+        <li><a href="#">Centro ayuda</a></li>
+        <li>
+          <a href="#">clientes@ONE.SAC.peru.com</a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              ><img
+                src="/Home/Carpeta_iconos/whatsapp.svg"
+                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+                alt=""
+            /></i>
+            903322944</a
+          >
+        </li>
+      </ul>
+    </section>
+    <section id="f_imagenes">
+      <section id="f1_imagenes">
+        <a href=""><img src="/Home/Carpeta_iconos/facebook.svg" alt="Facebook"></a>
+        <a href=""><img src="/Home/Carpeta_iconos/x.svg" alt=""></a>
+        <a href=""><img src="/Home/Carpeta_iconos/whatsapp.svg" alt=""></a>
+      </section>
+      <section id="f2_imagenes">
+        <a href="#"><img src="/Home/Carpeta_Imagenes/libro-reclamaciones-autoland.png.png" alt=""></a>
+      </section>
+    </section>
+  </section>
+
+  <section id="footer_derechos">
+    <p id="Precios_bonos">
+      Precios y bonos publicados en este sitio son referenciales,
+      equipamiento y vigencia de las promociones. Las imágenes, textos y
+      catálogos son referenciales.
     </p>
-    <ul class="redes_sociales">
-      <li>
-        <a href="#"
-          ><img
-            src="/Home/Carpeta_iconos/facebook.svg"
-            style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-            alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><img
-            src="/Home/Carpeta_iconos/x.svg"
-            alt=""
-            style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-            alt=""
-        /></a>
-      </li>
-      <li>
-        <a href="#"
-          ><img
-            src="/Home/Carpeta_iconos/google.svg"
-            alt=""
-            style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-            alt=""
-        /></a>
-      </li>
-    </ul>
-  </footer>
+    <p>Concesionario ONE.SAC | Todos los derechos reservados © 2024</p>
+  </section>
+</footer>
 
 </body>
 </html>

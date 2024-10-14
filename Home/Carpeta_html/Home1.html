@@ -8,9 +8,12 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="../Carpeta_Css/header.css" />
+    <link rel="stylesheet" href="../Carpeta_Css/footer.css" />
+
     <link rel="stylesheet" href="../Carpeta_Css/Home1.Css" />
     <script>
-      alert("Bienvenido");
+      // alert("Bienvenido");
     </script>
 
     <title>Home1</title>
@@ -88,32 +91,111 @@
         </section>
       </section>
 
+      <section id="sobrenosotros">
+        <table id="tablanosotros">
+          <tr>
+            <td id="imgsobrenosotros">
+              <img
+                id="imgcarrosobre"
+                src="../Carpeta_Imagenes/carro_rojo-removebg-preview.png"
+                alt=""
+              />
+            </td>
+            <td class="textnosotros">
+              <h2>ACERCA DE NOSOTROS</h2>
+              <p>
+                "Con más de 10 años de experiencia en el sector automotriz,
+                somos una empresa dedicada a ofrecer vehículos de alta calidad,
+                tanto nuevos como usados. Nuestra moderna flota incluye una
+                amplia variedad de autos que se adaptan a las necesidades y
+                preferencias de nuestros clientes. Nos enorgullece contar con
+                una base de clientes leales que valoran nuestro compromiso con
+                la excelencia y la transparencia en cada transacción.
+              </p>
+              <br />
+              <h3>Brindamos</h3>
+              <ul>
+                <li>Servicio 100% personalizado</li>
+                <li>Puntualidad</li>
+                <li>Seguridad</li>
+                <li>Confianza</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="textnosotros">
+              <h2>MISION</h2>
+              <p>
+                Nuestra misión es ofrecer a nuestros clientes una experiencia de
+                compra y venta de vehículos excepcional, proporcionando una
+                amplia gama de autos nuevos y usados de alta calidad, con un
+                servicio al cliente inigualable. Nos comprometemos a garantizar
+                la satisfacción total de nuestros clientes a través de la
+                transparencia, la confianza y la atención personalizada.
+              </p>
+            </td>
+            <td class="textnosotros">
+              <h2>VISION</h2>
+              <p>
+                Ser la empresa líder en el mercado de vehículos nuevos y usados,
+                reconocida por nuestra integridad, innovación y excelencia en el
+                servicio. Aspiramos a crear relaciones duraderas con nuestros
+                clientes y ser su primera opción al momento de comprar o vender
+                un vehículo, contribuyendo al desarrollo sostenible de nuestra
+                comunidad.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+
       <section id="section_promos">
         <h2 id="Promocions">Promociones</h2>
         <ul id="promo_links">
           <li>
-            <a href="#"><img
-              src="../Carpeta_Imagenes/Promociones/promocion1.png"
-              alt=""
-              class="lzmtos_img"
-            /></a>
-            
-          </li>
-          <li> 
-            <a href="#"><img
-              src="../Carpeta_Imagenes/Promociones/promocion2.webp"
-              alt=""
-              class="lzmtos_img"
-            /></a>
-            
+            <figure class="promofigure">
+              <a href="#"
+                ><img
+                  src="../Carpeta_Imagenes/Promociones/promocion1.png"
+                  alt=""
+                  class="lzmtos_img"
+              /></a>
+              <figcaption class="promofigcaption">
+                <h4>sedan</h4>
+                <h3>Honda Civic 200, 2005</h3>
+                <p>S/ 30,00</p>
+              </figcaption>
+            </figure>
           </li>
           <li>
-            <a href="#"><img
-              src="../Carpeta_Imagenes/Promociones/promocion3.webp"
-              alt=""
-              class="lzmtos_img"
-            /></a>
-            
+            <figure class="promofigure">
+              <a href="#"
+                ><img
+                  src="../Carpeta_Imagenes/Promociones/promocion2.webp"
+                  alt=""
+                  class="lzmtos_img"
+              /></a>
+              <figcaption class="promofigcaption">
+                <h4>Sedan</h4>
+                <h3>Hyundai Elantra Sport, 2017</h3>
+                <p>S/ 35,00</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="promofigure">
+              <a href="#"
+                ><img
+                  src="../Carpeta_Imagenes/Promociones/promocion3.webp"
+                  alt=""
+                  class="lzmtos_img"
+              /></a>
+              <figcaption class="promofigcaption">
+                <h4>Sedan</h4>
+                <h3>Nissan Altima 2.5S, 2012</h3>
+                <p>S/ 26,200</p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
         <a id="verseminuevos" href="#">
@@ -123,61 +205,113 @@
       <h3 id="BLOGG">BLOG</h3>
       <section id="galeria2">
         <table id="videos2">
-
           <tr>
             <td colspan="2">
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos1.mp4" style="height: calc( 150vh/2);"  controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos1.mp4"
+                    style="height: calc(150vh / 2)"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
             <td>
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos4.mp4" controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos4.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
           </tr>
 
-
           <tr>
             <td>
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos2.mp4" controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos2.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
-                        
+
             <td rowspan="2">
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos3.mp4" controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos3.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
 
             <td>
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos5.mp4" controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos5.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
           </tr>
           <tr>
             <td>
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos.mp4" controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
             <td>
               <article class="video-item2">
-                <a href="#"><video src="../videos/autos.mp4" controls autoplay loop muted></video></a>
+                <a href="#"
+                  ><video
+                    src="../videos/autos.mp4"
+                    controls
+                    autoplay
+                    loop
+                    muted
+                  ></video
+                ></a>
               </article>
             </td>
           </tr>
         </table>
       </section>
- 
+      <h2 id="Irblog"><button>Ir a BLOG</button></h2>
 
       <section id="preferencia">
-        <h2>
-          ¿Por qué
-          comprar <br />en ONE.SAC?
-        </h2>
+        <h2>¿Por qué comprar <br />en ONE.SAC?</h2>
 
         <ul>
           <li style="width: 477px; margin-right: 5px" class="beneficio">
@@ -262,12 +396,18 @@
         </section>
         <section id="f_imagenes">
           <section id="f1_imagenes">
-            <a href=""><img src="../Carpeta_iconos/facebook.svg" alt="Facebook"></a>
-            <a href=""><img src="../Carpeta_iconos/x.svg" alt=""></a>
-            <a href=""><img src="../Carpeta_iconos/whatsapp.svg" alt=""></a>
+            <a href=""
+              ><img src="../Carpeta_iconos/facebook.svg" alt="Facebook"
+            /></a>
+            <a href=""><img src="../Carpeta_iconos/x.svg" alt="" /></a>
+            <a href=""><img src="../Carpeta_iconos/whatsapp.svg" alt="" /></a>
           </section>
           <section id="f2_imagenes">
-            <a href="#"><img src="../Carpeta_Imagenes/libro-reclamaciones-autoland.png.png" alt=""></a>
+            <a href="#"
+              ><img
+                src="../Carpeta_Imagenes/libro-reclamaciones-autoland.png.png"
+                alt=""
+            /></a>
           </section>
         </section>
       </section>

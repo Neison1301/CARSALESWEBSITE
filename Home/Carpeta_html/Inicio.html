@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Carpeta_Css/Inicio.css">
+    <link rel="stylesheet" href="../Carpeta_Css/Inicio.css" />
     <title>Iniciar Seccion</title>
   </head>
 
@@ -28,7 +28,10 @@
           INGRESE SUS DATOS PERSONALES PARA USAR TODAS LAS FUNCIONES DEL SITIO
         </p>
       </div>
-      <img src="/Home/Carpeta_Imagenes/carro_rojo-removebg-preview.png" alt="Imagen del vehiculo" />
+      <img
+        src="/Home/Carpeta_Imagenes/carro_rojo-removebg-preview.png"
+        alt="Imagen del vehiculo"
+      />
     </header>
 
     <main>
@@ -39,7 +42,7 @@
           ¡Bienvenido de nuevo! Por favor ingrese sus datos.
         </p>
 
-        <form class="form" action="/Home/Carpeta_html/Home1.html">
+        <form id="form" action="/Home/Carpeta_html/Home1.html">
           <div class="campos">
             <label for="email">Correo:</label>
             <input
@@ -47,7 +50,6 @@
               id="email"
               name="email"
               placeholder="Ingrese su correo"
-              
             />
             <i class="fas fa-user"></i>
           </div>
@@ -59,7 +61,6 @@
               id="password"
               name="password"
               placeholder="**********"
-              
             />
             <i class="fas fa-lock"></i>
           </div>
@@ -68,10 +69,26 @@
           <div class="Registro">
             <p>
               ¿No tiene una cuenta?
-              <a id="Acceso" href="Registrarse.html"><span> Cree una</span></a><br>
+              <a id="Acceso" href="Registrarse.html"><span> Cree una</span></a
+              ><br />
               <a href="/Home/Carpeta_html/Home1.html">volver</a>
             </p>
           </div>
+
+          <script>
+            document
+              .getElementById("form")
+              .addEventListener("submit", function (event) {
+                // datos
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if (email === "" || password === "") {
+                  alert("Por favor, complete ambos campos.");
+                  event.preventDefault(); 
+                }
+              });
+          </script>
         </form>
       </section>
     </main>

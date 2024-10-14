@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="../Carpeta_Css/Registrarse.Css">
+    <link rel="stylesheet" href="../Carpeta_Css/Registrarse.Css" />
     <title>Registrate</title>
   </head>
 
@@ -17,16 +17,10 @@
       <hr class="separador" />
       <p class="mensaje">¡Bienvenido de nuevo! Por favor ingrese sus datos.</p>
 
-     <form id="formm">
+      <form id="formm">
         <div class="campos">
           <label for="nombre">Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Nombre"
-            required
-          />
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
           <i class="fas fa-user"></i>
         </div>
         <div class="campos">
@@ -36,7 +30,6 @@
             id="apellidos"
             name="apellidos"
             placeholder="Apellidos"
-            required
           />
           <i class="fas fa-user-tie"></i>
         </div>
@@ -47,7 +40,6 @@
             id="correo"
             name="correo"
             placeholder="Ingrese su Correo"
-            required
           />
           <i class="fas fa-envelope"></i>
         </div>
@@ -58,17 +50,18 @@
             id="contraseña"
             name="contraseña"
             placeholder="***********"
-            required
           />
           <i class="fas fa-lock"></i>
         </div>
 
         <div class="registro">
-          <input type="checkbox" id="checkbox1" required />
+          <input type="checkbox" id="checkbox1" />
           <label for="checkbox1">
             Al continuar con tu correo o tu red social aceptas los
-            <a href="../../Documentacion/Carpeta_Html/TerminosYcondiciones.html"><span>términos y condiciones</span></a> y el
-            <a href="#"><span>aviso de privacidad</span></a
+            <a href="../../Documentacion/Carpeta_Html/TerminosYcondiciones.html"
+              ><span>términos y condiciones</span></a
+            >
+            y el <a href="#"><span>aviso de privacidad</span></a
             >.
           </label>
         </div>
@@ -86,10 +79,42 @@
         </p>
       </div>
       <img
-        src="../Carpeta_Imagenes/large.gif"
+        src="../Carpeta_Imagenes/sail-sedan-blanco.jpg"
         alt="Lamborghini"
         class="car-image"
       />
     </section>
+
+    <script>
+      document
+        .getElementById("formm")
+        .addEventListener("submit", function (event) {
+          var nombre = document.getElementById("nombre").value;
+          var apellidos = document.getElementById("apellidos").value;
+          var correo = document.getElementById("correo").value;
+          var contraseña = document.getElementById("contraseña").value;
+          var checkbox = document.getElementById("checkbox1").checked;
+
+          if (
+            nombre === "" ||
+            apellidos === "" ||
+            correo === "" ||
+            contraseña === ""
+          ) {
+            alert("Por favor, complete todos los campos.");
+            event.preventDefault();
+          }
+
+          if (contraseña.length < 6) {
+            alert("La contraseña debe tener al menos 6 caracteres.");
+            event.preventDefault();
+          }
+
+          if (!checkbox) {
+            alert("Debe aceptar los términos y condiciones.");
+            event.preventDefault();
+          }
+        });
+    </script>
   </body>
 </html>

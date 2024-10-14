@@ -4,45 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
+    <link rel="stylesheet" href="/Servicios/Carpeta_Css/estilos.css">
+   
 </head>
 <body>
   <header>
-    <a href="#" id="logo">
-        <img
-        src="/Home/Carpeta_iconos/favicon.svg"
-        style="width: 64px; height: 56px ; background: black;" 
-        alt=""
+    <a href="#" id="logo"
+        ><img
+          src="/Home/Carpeta_Imagenes/icon.jpg"
+          alt=""
         />
-    </a>
-    <h1 id="empresa">ONE</h1>
-    <ul id="opciones">
-        <li><a href="/Home/Carpeta_html/Home1.html">Inicio</a></li>
-        <li><a href="/Modelos/Carpeta_html/modelos.html">Modelos</a></li>
-        <li><a href="/Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
-        <li><a href="/Servicios/Carpeta_html/serviciosdelaempresa.html">Servicios</a></li>
-        <li><a href="/Blog/Carpeta_html/Blog.html">Blog</a></li>
-    </ul>
-    <div id="salir">
+      </a>
+
+      <nav>
+        <ul id="opciones">
+          <li><a href="/Home/Carpeta_html/Home1.html">Inicio</a></li>
+          <li><a href="/Modelos/Carpeta_html/modelos.html">Modelos</a></li>
+          <li><a href="/Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
+          <li>
+            <a href="/Servicios/Carpeta_html/serviciosdelaempresa.html"
+              >Servicios</a
+            >
+          </li>
+          <li><a href="/Blog/Carpeta_html/Blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div id="salir">
         <a href="/Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
         <div class="bx bx-menu" id="iconomenu"></div>
-    </div>
+      </div>
 </header>
 
-    <nav id="busqueda">
-        <h2>Encuentra tu Auto Ideal</h2>
-        <form action="#" method="GET">
-            <input type="text" name="marca" placeholder="Buscar por marca" />
-            <select name="tipo">
-            <option value="sedan">Sedán</option>
-            <option value="suv">SUV</option>
-            <option value="deportivo">Deportivo</option>
-            </select>
-            <input type="number" name="precio_min" placeholder="Precio mínimo" />
-            <input type="number" name="precio_max" placeholder="Precio máximo" />
-            <button type="submit">Buscar</button>
-        </form>
-    </nav>
-    
     <section class="hero">
         <div class="hero-content">
             <h2>Mantenimiento y Reparación de Automóviles</h2>
@@ -163,83 +156,76 @@
     </section>
 
     <footer>
-        <h4><span style="color: red">ONE.SAC</span></h4>
-        <ul class="links">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Trabaja con nosotros</a></li>
-          <li><a href="/Documentacion/Carpeta_Html/TerminosYcondiciones.html">Términos y condiciones</a></li>
-        </ul>
-        <h4>Tipos de vehículos (Modelos)</h4>
-        <ul class="links">
-          <li><a href="#">Sedán</a></li>
-          <li><a href="#">SUV</a></li>
-          <li><a href="#">Hatchback</a></li>
-          <li><a href="#">Pick-up</a></li>
-          <li><a href="#">Deportivo</a></li>
-          <li><a href="#">Eléctrico</a></li>
-          <li><a href="#">4x4</a></li>
-          <li><a href="#">Coupé</a></li>
-          <li><a href="#">Convertible</a></li>
-          <li><a href="#">Van</a></li>
-        </ul>      
-        <h4>Servicios</h4>
-        <ul class="links">
-          <li><a href="#">Servicio SemiUsados</a></li>
-        </ul>
-        <h4>Contacto</h4>
-        <ul class="links">
-          <li><a href="#">Centro de ayuda</a></li>
-          <li>
-            <a href="#"
-              >clientes@<span style="color: red">ONE.SAC</span
-              >peru.com</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><i
-                ><img
-                  src="/Home/Carpeta_iconos/whatsapp.svg"
-                  style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                  alt=""
-              /></i>
-              928770412</a
-            >
-          </li>
-        </ul>
-        <h4><span style="color: red">ONE.SAC</span></h4>
-        <p>
-          Concesionario <span style="color: red">ONE.SAC</span> |
-          Todos los derechos reservados © 2024
+      <section id="footer_enlaces">
+        <section>
+          <h4 class="footer_titulos">ONE.SAC</h4>
+          <ul class="footer_links">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li>
+              <a href="/Documentacion/Carpeta_Html/TerminosYcondiciones.html"
+                >Términos y condiciones</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="footer_titulos">Tipos de vehículos (Modelos)</h4>
+          <ul class="footer_links">
+            <li><a href="#">Sedán</a></li>
+            <li><a href="#">SUV</a></li>
+            <li><a href="#">Hatchback</a></li>
+            <li><a href="#">Pick-up</a></li>
+            <li><a href="#">Deportivo</a></li>
+            <li><a href="#">Eléctrico</a></li>
+            <li><a href="#">4x4</a></li>
+            <li><a href="#">Van</a></li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="footer_titulos">Servicios</h4>
+          <ul class="footer_links"></ul>
+        </section>
+        <section>
+          <h4 class="footer_titulos">Contacto</h4>
+          <ul class="footer_links">
+            <li><a href="#">Centro ayuda</a></li>
+            <li>
+              <a href="#">clientes@ONE.SAC.peru.com</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  ><img
+                    src="/Home/Carpeta_iconos/whatsapp.svg"
+                    style="width: 15px; padding-bottom: 4px; margin-right: 5px"
+                    alt=""
+                /></i>
+                928770412</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="f_imagenes">
+          <section id="f1_imagenes">
+            <a href=""><img src="../Carpeta_iconos/facebook.svg" alt="Facebook"></a>
+            <a href=""><img src="../Carpeta_iconos/x.svg" alt=""></a>
+            <a href=""><img src="../Carpeta_iconos/whatsapp.svg" alt=""></a>
+          </section>
+          <section id="f2_imagenes">
+            <a href="#"><img src="../Carpeta_Imagenes/libro-reclamaciones-autoland.png.png" alt=""></a>
+          </section>
+        </section>
+      </section>
+
+      <section id="footer_derechos">
+        <p id="Precios_bonos">
+          Precios y bonos publicados en este sitio son referenciales,
+          equipamiento y vigencia de las promociones. Las imágenes, textos y
+          catálogos son referenciales.
         </p>
-        <ul class="redes_sociales">
-          <li>
-            <a href="#"
-              ><img
-                src="/Home/Carpeta_iconos/facebook.svg"
-                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="/Home/Carpeta_iconos/x.svg"
-                alt=""
-                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                src="/Home/Carpeta_iconos/google.svg"
-                alt=""
-                style="width: 15px; padding-bottom: 4px; margin-right: 5px"
-                alt=""
-            /></a>
-          </li>
-        </ul>
+        <p>Concesionario ONE.SAC | Todos los derechos reservados © 2024</p>
+      </section>
       </footer>
     
 </body>
