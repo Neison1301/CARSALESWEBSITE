@@ -25,7 +25,7 @@ body{
 }
 
 #seccionfiltro{
-    flex: 0.7;
+    flex: 18% ;
     border-right: 5px solid #000;
     border-top: 5px solid #000;
 
@@ -54,7 +54,7 @@ body{
 }
 
 #seccionmodelos{
-    flex: 3.2;
+    flex: 82% ;
 }
 
 .filas{

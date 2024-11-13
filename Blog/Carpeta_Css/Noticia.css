@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif; /* Tipografía */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+
+main {
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto; /* Centrando el main */
+    padding: 20px; /* Espacio interno */
+    background-color: #fff; /* Color de fondo del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+h1, h2 {
+    text-align: center; /* Centrando los encabezados */
+    color: #333; /* Color del texto */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espacio debajo del h2 */
+}
+
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #555; /* Color del texto */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+}
+
+
+img {
+    max-width: 80%; /* Cambia el 100% a 80% para reducir el tamaño */
+    height: auto; /* Mantener la proporción */
+    display: block; /* Eliminar espacio debajo de las imágenes */
+    margin: 20px auto; /* Centrando imágenes */
+}
+
+
+strong {
+    font-size: 1.1em; /* Aumentando el tamaño de los pasos */
+    color: #000; /* Color del texto de los pasos */
+    margin-top: 10px; /* Espacio superior */
+    display: block; /* Asegurar que empiecen en una nueva línea */
+}
