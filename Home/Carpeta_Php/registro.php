@@ -11,20 +11,15 @@ if ($nombre && $apellidos && $correo && $contraseña) {
     
     $conn->begin_transaction();
 
-        $stmt_registro = $conn->prepare("INSERT INTO registro (nombre, apellidos, correo, contraseña) VALUES (?, ?, ?, ?)");
+        $stmt_registro = $conn->prepare("INSERT INTO usuarios (nombre, apellidos, correo, contraseña) VALUES (?, ?, ?, ?)");
         $stmt_registro->bind_param("ssss", $nombre, $apellidos, $correo, $contraseña);
         $stmt_registro->execute();
-
-        $stmt_login = $conn->prepare("INSERT INTO login (correo, contraseña) VALUES (?, ?)");
-        $stmt_login->bind_param("ss", $correo, $contraseña);
-        $stmt_login->execute();
 
         $conn->commit();
 
         $stmt_registro->close();
-        $stmt_login->close();
         
-        header("Location: ../Carpeta_html/Home1.php ");
+        header("Location: ../Carpeta_html/Home1.html ");
         exit();
 } else {
     echo "Por favor, complete todos los campos.";

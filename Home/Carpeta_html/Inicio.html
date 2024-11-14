@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="../Carpeta_Css/Inicio.css" />
     <title>Iniciar Seccion</title>
   </head>
-
   <body>
     <header class="rc">
       <div class="msj">
@@ -75,20 +74,22 @@
             </p>
           </div>
 
+<input type="file" name="foto" value="ingrese foto">
+
           <script>
-            document.getElementById("form").addEventListener("submit", function (event) {
+            document
+              .getElementById("form")
+              .addEventListener("submit", function (event) {
                 // datos
                 var email = document.getElementById("email").value;
                 var password = document.getElementById("password").value;
 
                 if (email === "" || password === "") {
                   alert("Por favor, complete ambos campos.");
-                  event.preventDefault(); 
+                  event.preventDefault();
                 }
               });
           </script>
-
-
 
         </form>
       </section>
