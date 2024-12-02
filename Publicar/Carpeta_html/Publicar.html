@@ -6,7 +6,6 @@
     <title>Venta y Compra</title>
     <!--la conecccin de css para el diseño de la pagina-->
     <link rel="stylesheet" href="../Carpeta_Css/Publicar.css">
-    <script src="../javaScrip/Publicar.js"></script>
     
 </head>
 
@@ -19,12 +18,14 @@
           alt=""
         />
       </a>
-
+  
       <nav>
         <ul id="opciones">
           <li><a href="../../Home/Carpeta_html/Home1.html">Inicio</a></li>
           <li><a href="../../Modelos/Carpeta_html/modelos.html">Modelos</a></li>
-          <li><a href="../../Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
+          <li>
+            <a href="../../Publicar/Carpeta_html/Publicar.html">Publicar</a>
+          </li>
           <li>
             <a href="../../Servicios/Carpeta_html/serviciosdelaempresa.html"
               >Servicios</a
@@ -33,10 +34,24 @@
           <li><a href="../../Blog/Carpeta_html/Blog.html">Blog</a></li>
         </ul>
       </nav>
-
+  
       <div id="salir">
-        <a href="../../Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
-        <div class="bx bx-menu" id="iconomenu"></div>
+        <a href="../Carpeta_html/Inicio.html"><input type="button" id="nave" name="nombreusuario" />
+        </a>
+      
+      <script>
+        // Recuperar el nombre de usuario del localStorage
+        const username = localStorage.getItem('nombre');
+        
+        // Cambiar el valor del input con el nombre de usuario
+        if (username) {
+            document.getElementById('nave').value = username;
+        } else {
+            document.getElementById('nave').value = 'Iniciar sesion';
+        }
+    </script>
+  
+      <div class="bx bx-menu" id="iconomenu"></div>
       </div>
     </header>
 <!--INFORMACION PRINCIPAL-->
@@ -44,7 +59,7 @@
   <section class="banner">
   <center><H2>BRINDANOS LOS DATOS DE TU AUTO</H2> </center>
   <!--PRIMERA TABLA-->
-  <form id="form1" method="---"action="">
+  <form enctype="multipart/form-data" id="form1" method="post"action="../Carpeta_php/Publicar.php">
   
     <center>
     <table>
@@ -52,26 +67,26 @@
     <td><p>
   <fieldset>
       <legend>Año del Auto</legend>
-      <input type="number"id="txtnAño" placeholder="INGRESE EL AÑO"></br>
+      <input type="number"id="txtnAño" placeholder="INGRESE EL AÑO" name="añoA"></br>
   </fieldset>
   </p></td>
   
   <td><p>
   <fieldset>
       <legend>Kilometraje</legend>
-      <input type="number"id="txtKilometraje" placeholder="INGRESE EL KilOMETRAJE"></br>
+      <input type="number"id="txtKilometraje" placeholder="INGRESE EL KilOMETRAJE"name="kilometraje"></br>
   </fieldset>
   </p></td>
   <td><p>
   <fieldset>
       <legend>Marca</legend>
-      <input type="text"id="txtMarca"placeholder="INGRESE LA MARCA"></br>
+      <input type="text"id="txtMarca"placeholder="INGRESE LA MARCA" name="marca" ></br>
   </fieldset>
   </p></td>
   <td><p>
   <fieldset>
       <legend>Modelo</legend>
-      <input type="text"id="txtnombre"placeholder="INGRESE EL MODELO"></br>
+      <input type="text"id="txtmodelo"placeholder="INGRESE EL MODELO" name="modelo" ></br>
   </fieldset>
   </p></td>
   </tr>
@@ -81,19 +96,19 @@
   <td><p>
       <fieldset>
       <legend>Version</legend>
-      <input type="text"id="txtnombre"placeholder="INGRESE LA VERSION"></br>
+      <input type="text"id="txtversion"placeholder="INGRESE LA VERSION" name="version" ></br>
   </fieldset>
   </p></td>
   <td><p>
   <fieldset>
       <legend>Color</legend>
-      <input type="text"id="txtnombre"placeholder="INGRESE EL COLOR"></br>
+      <input type="text"id="txtcolor"placeholder="INGRESE EL COLOR" name="color" ></br>
   </fieldset>
   </p></td>
   <td><p>
   <fieldset>
       <legend>Combustible</legend>
-      <select id="cbocombustible">
+      <select id="cbocombustible" name="combustible" >
       <option>Seleccione</option>
       <option>GNC</option>
       <option>GASOLINA</option>
@@ -103,7 +118,7 @@
   <td><p>
   <fieldset>
       <legend>Precio</legend>
-      <input type="number"id="txtPrecio"placeholder="INGEESE EL PRECIO"></br>
+      <input type="number"id="txtPrecio"placeholder="INGEESE EL PRECIO" name="Precio" ></br>
   </fieldset>
   </p></td>
   </table>
@@ -116,13 +131,13 @@
   <td><p>
       <fieldset>
           <legend>DEPARTAMENTO</legend>
-          <input type="text"id="txtdepartamento"placeholder="INGRESE EL DPARTAMENTO"></br>
+          <input type="text"id="txtdepartamento"placeholder="INGRESE EL DPARTAMENTO" name="departamento" ></br>
       </fieldset>
   </p></td>
   <td><p>
       <fieldset>
           <legend>PROVINCIA</legend>
-          <input type="text"id="txtProvincia"placeholder="INGRESE LA PROVINCIA"></br>
+          <input type="text"id="txtProvincia"placeholder="INGRESE LA PROVINCIA" name="provincia" ></br>
       </fieldset>
     </p></td>
   </p></td>
@@ -131,28 +146,31 @@
 
 
   <TABle> 
+    
+<h2>SELECCIONE LAS FOTOS DE TU AUTO</h2>
+
+<label for="fileFotos" class="custom-file-upload">
+  Elegir archivos
+</label>
+<input id="fileFotos" type="file" value="ingrese foto" name="fotos"accept="image/*" multiple > 
   <TR>
   <TD><p>
       <p>
       <center><H2>BRINDENOS SU NUMERO TELEFONICO</H2>
-      <fieldset>
+      <fieldset id="phoneFieldset">
           <legend>TELEFONO</legend>
-          <input type="number"id="txtProvincia"placeholder="INGRESE SU NUEMERO"></br>
+          <input type="number"id="txttelefono"placeholder="INGRESE SU NUEMERO" name="numt" ></br>
       </fieldset></center>
       </p>
     </td>
   </tr>
   </table>
 </center>
-<center>
-<h2>SELECCIONE LAS FOTOS DE TU AUTO</h2>
+
 <table>
-  <tr>
-  <td><p> 
-      <textarea id="txtComentarios"cols="80" rows="10" placeholder="COLOQUE LA IMAGEN" risade="none"></textarea>
-  </p>
+ 
   <p id="botton_enviar">
-   <center><button value="presiona" id="btenviar">ENVIAR INFORMACION</button></center>
+   <center><button type="submit"  value="presiona" id="btenviar">ENVIAR INFORMACION</button></center>
   </p>
   </td>
   </tr>
@@ -237,6 +255,9 @@
     <p>Concesionario ONE.SAC | Todos los derechos reservados © 2024</p>
   </section>
 </footer>
+<script src="../javaScrip/Publicar.js"></script>
+<!--js-->
+
 
 </body>
 </html>

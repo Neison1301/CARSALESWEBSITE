@@ -4,50 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="Ventas.css" />
+    <link rel="stylesheet" href="Carrito.Css" />
     <title>Home1</title>
 </head>
 <body>
-    <header>
-        <a href="#" id="logo">
-            <img src="../Home/Carpeta_Imagenes/icon.jpg" alt="Logo" />
-        </a>
-        <nav>
-            <ul id="opciones">
-                <li><a href="/Home/Carpeta_html/Home1.html">Inicio</a></li>
-                <li><a href="/Modelos/Carpeta_html/modelos.html">Modelos</a></li>
-                <li><a href="/Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
-                <li><a href="/Servicios/Carpeta_html/serviciosdelaempresa.html">Servicios</a></li>
-                <li><a href="/Blog/Carpeta_html/Blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <div id="salir">
-            <a href="/Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
-            <div class="bx bx-menu" id="iconomenu"></div>
-        </div>
-    </header>
+  <header>
+    <a href="#" id="logo"
+      ><img
+        src="../Home/Carpeta_Imagenes/icon.jpg"
+        alt=""
+      />
+    </a>
 
+    <nav>
+      <ul id="opciones">
+        <li><a href="../Home/Carpeta_html/Home1.html">Inicio</a></li>
+        <li><a href="../../Modelos/Carpeta_html/modelos.html">Modelos</a></li>
+        <li>
+          <a href="../../Publicar/Carpeta_html/Publicar.html">Publicar</a>
+        </li>
+        <li>
+          <a href="../../Servicios/Carpeta_html/serviciosdelaempresa.html"
+            >Servicios</a
+          >
+        </li>
+        <li><a href="../../Blog/Carpeta_html/Blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div id="salir">
+      <a href="../Carpeta_html/Inicio.html"><input type="button" id="nave" name="nombreusuario" />
+      </a>
+    
+    <script>
+      // Recuperar el nombre de usuario del localStorage
+      const username = localStorage.getItem('nombre');
+      
+      // Cambiar el valor del input con el nombre de usuario
+      if (username) {
+          document.getElementById('nave').value = username;
+      } else {
+          document.getElementById('nave').value = 'Iniciar sesion';
+      }
+  </script>
+
+    <div class="bx bx-menu" id="iconomenu"></div>
+    </div>
+  </header>
     <main>
-        <div class="product-container">
-            <div class="product-image">
-                <img src="../Modelos/imagen/SUV/Chevrolet Tahoe 2020.png"  alt="Producto" />
-            </div>
-            <div class="product-name">
-                <h2>SUV - Chevrolet Tahoe 2020 - 13,551 Km</h2>
-            <div class="product-price">
-                <p>S/ 23,200</p>
-            </div>
-            <div class="product-button">
-                <button id="comprar">COMPRAR</button>
-            </div>
-        </div>
-        <div class="separator-container">
-        <div class="separator-text"> 
-            El Chevrolet Tahoe y GMC Yukon es un automóvil todoterreno del segmento F desarrollado por General Motors y vendido bajo las marcas Chevrolet y GMC. Los modelos poseen configuraciones V8 de 5.3 L y 355 hp para el caso del modelo Tahoe, y un V8 de 6.2 L y 420 hp para el modelo de más lujo Yukon.</div>
-        <hr class="custom-separator">
-        </div>
-    </main>
-    <script src="popup.js"></script>
+      <div class="carrito-container">
+          <!-- Carrito -->
+          <div id="carrito">
+              <h2>Tu carrito</h2>
+              <ul id="lista-carrito">
+                  <!-- Aquí se agregarán los productos -->
+              </ul>
+              <p id="total-precio">Total: S/ 0</p>
+              <button id="pagar">Pagar</button>
+              <button id="limpiar-carrito">Limpiar Carrito</button>
+          </div>
+      </div>
+  </main>
+
 </body>
 <footer>
     <section id="footer_enlaces">
@@ -126,4 +144,5 @@
       <p>Concesionario ONE.SAC | Todos los derechos reservados © 2024</p>
     </section>
   </footer>
+  <script src="Carrito.js"></script>
 </html>

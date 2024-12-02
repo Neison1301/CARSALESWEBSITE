@@ -38,8 +38,23 @@
                 <p>S/ 26,200</p>
             </div>
             <div class="product-button">
-                <button id="comprar">COMPRAR</button>
+              <button 
+                  id="comprar" 
+                  data-id="4" 
+                  data-nombre="Sedan - Nissan Altima 2.5S 2012 - 18.551 Km" 
+                  data-precio="26,200">
+                  COMPRAR
+              </button>
+          </div>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>¡Producto agregado al carrito!</p>
+                <div class="popup-buttons">
+                    <button id="verCarrito">Ver carrito</button>
+                    <button id="seguirComprando">Seguir comprando</button>
+                </div>
             </div>
+        </div>
         </div>
         <div class="separator-container">
         <div class="separator-text"> 
@@ -48,6 +63,7 @@
             <hr class="custom-separator">
         </div>
     </main>
+    <script src="popup.js"></script>
 </body>
 <footer>
     <section id="footer_enlaces">

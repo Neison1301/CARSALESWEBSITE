@@ -8,24 +8,49 @@
     <title>Home1</title>
 </head>
 <body>
-    <header>
-        <a href="#" id="logo">
-            <img src="../Home/Carpeta_Imagenes/icon.jpg" alt="Logo" />
-        </a>
-        <nav>
-            <ul id="opciones">
-                <li><a href="/Home/Carpeta_html/Home1.html">Inicio</a></li>
-                <li><a href="/Modelos/Carpeta_html/modelos.html">Modelos</a></li>
-                <li><a href="/Publicar/Carpeta_html/Publicar.html">Publicar</a></li>
-                <li><a href="/Servicios/Carpeta_html/serviciosdelaempresa.html">Servicios</a></li>
-                <li><a href="/Blog/Carpeta_html/Blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <div id="salir">
-            <a href="/Home/Carpeta_html/Inicio.html" id="nave">Inicie Sesion</a>
-            <div class="bx bx-menu" id="iconomenu"></div>
-        </div>
-    </header>
+  <header>
+    <a href="#" id="logo"
+      ><img
+        src="../Home/Carpeta_Imagenes/icon.jpg"
+        alt=""
+      />
+    </a>
+
+    <nav>
+      <ul id="opciones">
+        <li><a href="../Home/Carpeta_html/Home1.html">Inicio</a></li>
+        <li><a href="../../Modelos/Carpeta_html/modelos.html">Modelos</a></li>
+        <li>
+          <a href="../../Publicar/Carpeta_html/Publicar.html">Publicar</a>
+        </li>
+        <li>
+          <a href="../../Servicios/Carpeta_html/serviciosdelaempresa.html"
+            >Servicios</a
+          >
+        </li>
+        <li><a href="../../Blog/Carpeta_html/Blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div id="salir">
+      <a href="../Carpeta_html/Inicio.html"><input type="button" id="nave" name="nombreusuario" />
+      </a>
+    
+    <script>
+      // Recuperar el nombre de usuario del localStorage
+      const username = localStorage.getItem('nombre');
+      
+      // Cambiar el valor del input con el nombre de usuario
+      if (username) {
+          document.getElementById('nave').value = username;
+      } else {
+          document.getElementById('nave').value = 'Iniciar sesion';
+      }
+  </script>
+
+    <div class="bx bx-menu" id="iconomenu"></div>
+    </div>
+  </header>
 
     <main>
         <div class="product-container">
@@ -38,8 +63,23 @@
                 <p>S/ 25,200</p>
             </div>
             <div class="product-button">
-                <button id="comprar">COMPRAR</button>
+              <button 
+                  id="comprar" 
+                  data-id="1" 
+                  data-nombre="Sedan - Toyota Corolla, 2015 - 16.551 Km" 
+                  data-precio="25200">
+                  COMPRAR
+              </button>
+          </div>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>¡Producto agregado al carrito!</p>
+                <div class="popup-buttons">
+                    <button id="verCarrito">Ver carrito</button>
+                    <button id="seguirComprando">Seguir comprando</button>
+                </div>
             </div>
+        </div>
         </div>
         <div class="separator-container">
         <div class="separator-text"> 
@@ -47,6 +87,8 @@
         <hr class="custom-separator">
         </div>
     </main>
+    <script src="popup.js"></script>
+
 </body>
 <footer>
     <section id="footer_enlaces">

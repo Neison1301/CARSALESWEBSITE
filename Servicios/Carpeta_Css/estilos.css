@@ -145,7 +145,7 @@ header {
     color: #666;
     text-align: right; 
     line-height: 1.6;  
-    margin-right: 15px; 
+    margin-left: 15px; 
 }
 
 
@@ -300,4 +300,8 @@ footer {
       width: 100%;
       height: auto;
     }
+  }
+
+  #contacto{
+    margin-bottom: 50px;
   }

@@ -8,7 +8,6 @@ $correo = $_POST["correo"];
 $contraseña = $_POST["contraseña"];
 
 if ($nombre && $apellidos && $correo && $contraseña) {
-    
     $conn->begin_transaction();
 
         $stmt_registro = $conn->prepare("INSERT INTO usuarios (nombre, apellidos, correo, contraseña) VALUES (?, ?, ?, ?)");

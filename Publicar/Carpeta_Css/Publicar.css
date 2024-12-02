@@ -1,3 +1,42 @@
+#phoneFieldset {
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 30px;
+    width: 300px;
+}
+/*----------*/
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #093769;
+    color: #fff;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto hover */
+.custom-file-upload:hover {
+    background-color: #2980b9;
+    border-color: #1f6391;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Efecto de click */
+.custom-file-upload:active {
+    background-color: #1f6391;
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
 header {
     position: fixed;
     top: 0;
@@ -85,7 +124,7 @@ header {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
     
-    #btenviar {
+        /*2 diseño estatico no usar por ahora
         background-color: #093769;
         color: rgb(255, 255, 255);
         padding: 3px 10px;
@@ -93,17 +132,41 @@ header {
         border-radius: 6px;
         cursor: pointer;
         font-size: 16px;
-        display: grid;
-        place-items: center;  /* Centra horizontal y verticalmente */
-        height: 10vh;
+        place-items: center; 
+        height: 10vh; */
+
+        #btenviar {
+            padding: 12px 28px;
+            background-color: #093769;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        #btenviar:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }  
+        #btenviar:active {
+            background-color: #004494;
+            transform: translateY(2px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
         
-    }
+ 
+    
+
     input[type="text"], input[type="number"], select {
         width: 100%;
         padding: 8px;
         margin-top: 5px;
         border: 1px solid #cccccc;
-        border-radius: 4px;
+        border-radius: 40px;
     }
     textarea {
         width: 100%;
@@ -150,7 +213,7 @@ header {
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 80px 100px;
+        padding: 70px 10px;
     }
     
 
